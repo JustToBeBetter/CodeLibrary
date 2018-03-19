@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A228564A205F611100B6B2F5 /* GifMakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2285649205F611100B6B2F5 /* GifMakerViewController.m */; };
+		A228564E205F625500B6B2F5 /* LJZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A228564D205F625500B6B2F5 /* LJZTool.m */; };
+		A2285652205F823D00B6B2F5 /* IMG_0088.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A2285651205F823D00B6B2F5 /* IMG_0088.mp4 */; };
 		A905AAB91F414C7500325F01 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AAB81F414C7500325F01 /* CountDownViewController.m */; };
 		A905AB6E1F4E84CE00325F01 /* PagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AB6D1F4E84CE00325F01 /* PagesViewController.m */; };
 		A905AB721F4E84EA00325F01 /* TopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AB711F4E84EA00325F01 /* TopBar.m */; };
@@ -57,6 +60,11 @@
 
 /* Begin PBXFileReference section */
 		37E7A80F8F9C0BDAD8A78FFC /* libPods-CodeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2285648205F611100B6B2F5 /* GifMakerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifMakerViewController.h; sourceTree = "<group>"; };
+		A2285649205F611100B6B2F5 /* GifMakerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifMakerViewController.m; sourceTree = "<group>"; };
+		A228564C205F625500B6B2F5 /* LJZTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJZTool.h; sourceTree = "<group>"; };
+		A228564D205F625500B6B2F5 /* LJZTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZTool.m; sourceTree = "<group>"; };
+		A2285651205F823D00B6B2F5 /* IMG_0088.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0088.mp4; sourceTree = "<group>"; };
 		A7A1567C5FB196E2E349C7A9 /* Pods-CodeLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		A905AAB71F414C7500325F01 /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
 		A905AAB81F414C7500325F01 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
@@ -142,6 +150,15 @@
 				37E7A80F8F9C0BDAD8A78FFC /* libPods-CodeLibrary.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A228564B205F611D00B6B2F5 /* GifMaker */ = {
+			isa = PBXGroup;
+			children = (
+				A2285648205F611100B6B2F5 /* GifMakerViewController.h */,
+				A2285649205F611100B6B2F5 /* GifMakerViewController.m */,
+			);
+			name = GifMaker;
 			sourceTree = "<group>";
 		};
 		A905AABA1F414C7D00325F01 /* CountDown */ = {
@@ -251,6 +268,8 @@
 				A9F92A921F726F250084F623 /* Categories */,
 				A9B358581EA8D95F004618BB /* UIView+LJZ.h */,
 				A9B358591EA8D95F004618BB /* UIView+LJZ.m */,
+				A228564C205F625500B6B2F5 /* LJZTool.h */,
+				A228564D205F625500B6B2F5 /* LJZTool.m */,
 				A9F92A941F726F570084F623 /* Generators */,
 			);
 			name = Utility;
@@ -263,6 +282,7 @@
 				A9B0D9DB1E9E29E80024361F /* Barrage */,
 				A905AABA1F414C7D00325F01 /* CountDown */,
 				A905AB6F1F4E84D400325F01 /* Pages */,
+				A228564B205F611D00B6B2F5 /* GifMaker */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -270,6 +290,7 @@
 		A9B0D9D71E9E00010024361F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A2285651205F823D00B6B2F5 /* IMG_0088.mp4 */,
 				A9B3585B1EA8DA2B004618BB /* icon_heart_1@2x.png */,
 				A9B3585C1EA8DA2B004618BB /* icon_heart_1@3x.png */,
 				A9B3585D1EA8DA2B004618BB /* icon_heart_2@2x.png */,
@@ -385,8 +406,7 @@
 				TargetAttributes = {
 					A9B0D9991E9DF9970024361F = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = UVQ93Y8LE3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					A9B0D9B21E9DF9970024361F = {
 						CreatedOnToolsVersion = 8.3;
@@ -428,6 +448,7 @@
 				A9B358661EA8DA2B004618BB /* icon_heart_3@2x.png in Resources */,
 				A9B0D9AD1E9DF9970024361F /* LaunchScreen.storyboard in Resources */,
 				A9B0D9AA1E9DF9970024361F /* Assets.xcassets in Resources */,
+				A2285652205F823D00B6B2F5 /* IMG_0088.mp4 in Resources */,
 				A9B0D9A81E9DF9970024361F /* Main.storyboard in Resources */,
 				A9F92A951F726F570084F623 /* Generators in Resources */,
 				A9B358641EA8DA2B004618BB /* icon_heart_2@2x.png in Resources */,
@@ -478,13 +499,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodeLibrary-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C578F5790EF291014D55D0F2 /* [CP] Copy Pods Resources */ = {
@@ -493,9 +517,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -511,6 +538,7 @@
 			files = (
 				A9B0D9A51E9DF9970024361F /* ViewController.m in Sources */,
 				A9B0D9E11E9E2C0B0024361F /* LJZBarrageManager.m in Sources */,
+				A228564E205F625500B6B2F5 /* LJZTool.m in Sources */,
 				A9B358561EA8D8DC004618BB /* LJZFireLikeView.m in Sources */,
 				A905AB721F4E84EA00325F01 /* TopBar.m in Sources */,
 				A9B0D9DE1E9E2A170024361F /* LJZBarrageView.m in Sources */,
@@ -522,6 +550,7 @@
 				A905AB6E1F4E84CE00325F01 /* PagesViewController.m in Sources */,
 				A905AB751F4E966900325F01 /* LJZFirstViewController.m in Sources */,
 				A9B0D99F1E9DF9970024361F /* main.m in Sources */,
+				A228564A205F611100B6B2F5 /* GifMakerViewController.m in Sources */,
 				A905AB781F4E967300325F01 /* LJZSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,13 +701,15 @@
 			baseConfigurationReference = A7A1567C5FB196E2E349C7A9 /* Pods-CodeLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UVQ93Y8LE3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CodeLibrary/CodePrefix.pch;
 				INFOPLIST_FILE = CodeLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = li.CodeLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -687,13 +718,15 @@
 			baseConfigurationReference = FF7E25F2462D2303DA3F8455 /* Pods-CodeLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UVQ93Y8LE3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CodeLibrary/CodePrefix.pch;
 				INFOPLIST_FILE = CodeLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = li.CodeLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

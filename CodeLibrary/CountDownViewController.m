@@ -35,7 +35,7 @@
     CGFloat timeLabelX = 50;
     CGFloat timeLabelY = 80;
     CGFloat timeLabelW = SCREEN_WIDTH - 2*timeLabelX;
-    CGFloat timeLabelH = 60;
+    CGFloat timeLabelH = 80;
     
     self.timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(timeLabelX, timeLabelY, timeLabelW, timeLabelH)];
     self.timeLabel.numberOfLines = 0;

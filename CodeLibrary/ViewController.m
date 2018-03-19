@@ -27,7 +27,7 @@
     [self.view addSubview:self.table];
 }
 - (void)initData{
-    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages"];
+    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker"];
 }
 - (UITableView *)table{
     
@@ -35,7 +35,7 @@
         _table = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
         _table.delegate = self;
         _table.dataSource = self;
-        
+        _table.tableFooterView = [[UIView alloc]init];
     }
     return _table;
 }

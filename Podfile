@@ -4,5 +4,5 @@ target ‘CodeLibrary’ do
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'SVProgressHUD'
-
+pod 'FLAnimatedImage'
 end
