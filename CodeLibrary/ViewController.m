@@ -54,6 +54,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *vcStr = [NSString stringWithFormat:@"%@ViewController",_dataArray[indexPath.row]];
     UIViewController *VC = [[NSClassFromString(vcStr) alloc]init];
+    VC.title = _dataArray[indexPath.row];
     [self.navigationController pushViewController:VC animated:YES];
 }
 - (void)didReceiveMemoryWarning {

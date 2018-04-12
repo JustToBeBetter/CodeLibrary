@@ -26,7 +26,6 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.title = @"弹幕";
     [self addbutton];
     [self initBarrage];
     
