@@ -24,7 +24,6 @@
     [super tearDown];
 }
 - (void)testFireLike{
-    FireLikeViewController *fireVC = [[FireLikeViewController alloc]init];
     
 }
 - (void)testExample {

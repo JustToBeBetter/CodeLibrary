@@ -14,6 +14,8 @@
 		A2285659205F958500B6B2F5 /* LJZFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2285658205F958500B6B2F5 /* LJZFloatingView.m */; };
 		A228565C205F983F00B6B2F5 /* PaomaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A228565B205F983F00B6B2F5 /* PaomaViewController.m */; };
 		A2285660205F985C00B6B2F5 /* LJZPaomaView.m in Sources */ = {isa = PBXBuildFile; fileRef = A228565F205F985C00B6B2F5 /* LJZPaomaView.m */; };
+		A2337B1120883E660033090F /* SegmentViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2337B1020883E660033090F /* SegmentViewViewController.m */; };
+		A2337B1520883EE80033090F /* LJZSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2337B1420883EE80033090F /* LJZSegmentView.m */; };
 		A905AAB91F414C7500325F01 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AAB81F414C7500325F01 /* CountDownViewController.m */; };
 		A905AB6E1F4E84CE00325F01 /* PagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AB6D1F4E84CE00325F01 /* PagesViewController.m */; };
 		A905AB721F4E84EA00325F01 /* TopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AB711F4E84EA00325F01 /* TopBar.m */; };
@@ -77,6 +79,10 @@
 		A228565B205F983F00B6B2F5 /* PaomaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaomaViewController.m; sourceTree = "<group>"; };
 		A228565E205F985C00B6B2F5 /* LJZPaomaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZPaomaView.h; sourceTree = "<group>"; };
 		A228565F205F985C00B6B2F5 /* LJZPaomaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZPaomaView.m; sourceTree = "<group>"; };
+		A2337B0F20883E660033090F /* SegmentViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentViewViewController.h; sourceTree = "<group>"; };
+		A2337B1020883E660033090F /* SegmentViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewViewController.m; sourceTree = "<group>"; };
+		A2337B1320883EE80033090F /* LJZSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZSegmentView.h; sourceTree = "<group>"; };
+		A2337B1420883EE80033090F /* LJZSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZSegmentView.m; sourceTree = "<group>"; };
 		A7A1567C5FB196E2E349C7A9 /* Pods-CodeLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		A905AAB71F414C7500325F01 /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
 		A905AAB81F414C7500325F01 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
@@ -193,6 +199,17 @@
 				A228565F205F985C00B6B2F5 /* LJZPaomaView.m */,
 			);
 			name = PaomaView;
+			sourceTree = "<group>";
+		};
+		A2337B1220883E7A0033090F /* segmentView */ = {
+			isa = PBXGroup;
+			children = (
+				A2337B0F20883E660033090F /* SegmentViewViewController.h */,
+				A2337B1020883E660033090F /* SegmentViewViewController.m */,
+				A2337B1320883EE80033090F /* LJZSegmentView.h */,
+				A2337B1420883EE80033090F /* LJZSegmentView.m */,
+			);
+			name = segmentView;
 			sourceTree = "<group>";
 		};
 		A905AABA1F414C7D00325F01 /* CountDown */ = {
@@ -319,6 +336,7 @@
 				A228564B205F611D00B6B2F5 /* GifMaker */,
 				A2285656205F955800B6B2F5 /* FloatingView */,
 				A228565D205F984600B6B2F5 /* PaomaView */,
+				A2337B1220883E7A0033090F /* segmentView */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -572,6 +590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2337B1120883E660033090F /* SegmentViewViewController.m in Sources */,
 				A9B0D9A51E9DF9970024361F /* ViewController.m in Sources */,
 				A9B0D9E11E9E2C0B0024361F /* LJZBarrageManager.m in Sources */,
 				A228564E205F625500B6B2F5 /* LJZTool.m in Sources */,
@@ -582,6 +601,7 @@
 				A2285655205F955400B6B2F5 /* FloatingViewViewController.m in Sources */,
 				A9B0D9DA1E9E29DC0024361F /* BarrageViewController.m in Sources */,
 				A905AAB91F414C7500325F01 /* CountDownViewController.m in Sources */,
+				A2337B1520883EE80033090F /* LJZSegmentView.m in Sources */,
 				A2285659205F958500B6B2F5 /* LJZFloatingView.m in Sources */,
 				A9B358521EA8D87E004618BB /* FireLikeViewController.m in Sources */,
 				A9B3585A1EA8D95F004618BB /* UIView+LJZ.m in Sources */,

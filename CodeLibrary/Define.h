@@ -19,6 +19,14 @@
 #define SCREEN_WIDTH		([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT		([UIScreen mainScreen].bounds.size.height)
 
+#define kProportion [[UIScreen mainScreen] bounds].size.width /375//缩放因子
+#define kStatusHeight [UIApplication sharedApplication].statusBarFrame.size.height
+#define kFont(a) [UIFont systemFontOfSize:a];
+#define kMediumFont(a) [UIFont fontWithName:@"PingFangSC-Medium" size:a]
+#define kRegularFont(a) [UIFont fontWithName:@"PingFangSC-Regular" size:a]
+#define kSemiboldFont(a) [UIFont fontWithName:@"PingFangSC-Semibold" size:a]
+#define kBoldFont(a) [UIFont fontWithName:@"Helvetica-Bold" size:a]
+
 
 #import "LJZTool.h"
 #import "UIView+LJZ.h"

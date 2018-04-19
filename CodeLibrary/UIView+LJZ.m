@@ -9,6 +9,36 @@
 #import "UIView+LJZ.h"
 
 @implementation UIView (LJZ)
+
+- (CGPoint)position {
+    return self.frame.origin;
+}
+
+- (void)setPosition:(CGPoint)position {
+    CGRect rect = self.frame;
+    rect.origin = position;
+    [self setFrame:rect];
+}
+- (CGFloat)x {
+    return self.frame.origin.x;
+}
+
+- (void)setX:(CGFloat)x {
+    CGRect rect = self.frame;
+    rect.origin.x = x;
+    [self setFrame:rect];
+}
+
+- (CGFloat)y {
+    return self.frame.origin.y;
+}
+
+- (void)setY:(CGFloat)y {
+    CGRect rect = self.frame;
+    rect.origin.y = y;
+    [self setFrame:rect];
+}
+
 - (CGFloat)left {
     return self.frame.origin.x;
 
@@ -151,5 +181,20 @@
     return nil;
 }
 
-
+-(void)removeAllSubViews{
+    
+    for (UIView *subview in self.subviews){
+        [subview removeFromSuperview];
+    }
+    
+}
+- (void)setBackgroundImage:(UIImage *)image
+{
+    UIGraphicsBeginImageContext(self.frame.size);
+    [image drawInRect:self.bounds];
+    UIImage *bgImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.backgroundColor = [UIColor colorWithPatternImage:bgImage];
+}
 @end
