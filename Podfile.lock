@@ -15,23 +15,57 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - FLAnimatedImage (1.0.12)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.15.3)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - SVProgressHUD (2.2.5)
+  - YXBase (0.2.4):
+    - SDWebImage
+    - YXBase/CatonMonitoring (= 0.2.4)
+    - YXBase/DXBaseModel (= 0.2.4)
+    - YXBase/DXCategory (= 0.2.4)
+    - YXBase/DXNetwork (= 0.2.4)
+  - YXBase/CatonMonitoring (0.2.4):
+    - SDWebImage
+  - YXBase/DXBaseModel (0.2.4):
+    - SDWebImage
+  - YXBase/DXCategory (0.2.4):
+    - SDWebImage
+  - YXBase/DXNetwork (0.2.4):
+    - AFNetworking (~> 3.1.0)
+    - SDWebImage
+  - YXCommon (0.1.5):
+    - YXBase/DXCategory
+    - YXCommon/DXBaseTool (= 0.1.5)
+    - YXCommon/DXMediator (= 0.1.5)
+  - YXCommon/DXBaseTool (0.1.5):
+    - MJRefresh
+    - SVProgressHUD
+    - YXBase/DXCategory
+  - YXCommon/DXMediator (0.1.5):
+    - YXBase/DXCategory
 
 DEPENDENCIES:
   - AFNetworking
   - FLAnimatedImage
+  - Masonry
   - SDWebImage
   - SVProgressHUD
+  - YXBase (~> 0.2.4)
+  - YXCommon (~> 0.1.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YXBase: fa1f17729dea25f526a6dbee3e9511019879d108
+  YXCommon: 3a417f3566cb4c049162ce3f828972e361ad7973
 
-PODFILE CHECKSUM: 35dcb6cd2b5411a4241ed03cef25e22d08088947
+PODFILE CHECKSUM: 72a4f58af3c3ba289c01dfdee55844a1ed4b238a
 
 COCOAPODS: 1.3.1
