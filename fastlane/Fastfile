@@ -1,0 +1,41 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+lane :beta do
+  build_app(export_method: "development")
+  pgyer(api_key: "175b62a4d7f1636f5283305d7a8797a0", user_key: "ea3aaa881e13bcc9a278f88cd958912f”, update_description:“fastlanes”)
+end
+
+
+lane :getCer do
+  sync_code_signing
+  disable_automatic_code_signing(path: "CodeLibrary.xcodeproj")
+  build_app
+  enable_automatic_code_signing(path: "CodeLibrary.xcodeproj")
+  upload_to_testflight
+end
+
+lane :sign do
+  get_certificates           # invokes cert
+  get_provisioning_profile   # invokes sigh
+  build_app
+end
+
+
+end

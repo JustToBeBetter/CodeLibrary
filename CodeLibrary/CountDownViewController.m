@@ -375,7 +375,7 @@
 }
 - (void)aaa{
     
-    NSString *expireDateStr = @"2017-08-26 14:00:00";
+    NSString *expireDateStr = @"2018-04-14 19:00:00";
     NSDateComponents *dateCom = [self intervalSinceNowWithDataStr:expireDateStr];
     NSString *day1= [self dayIntervalFromNowtoDate:expireDateStr];
     NSString *hour1= [self hourIntervalFromNowtoDate:expireDateStr];
