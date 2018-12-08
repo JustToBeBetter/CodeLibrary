@@ -27,7 +27,7 @@
     [self.view addSubview:self.table];
 }
 - (void)initData{
-    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed"];
+    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake"];
 }
 - (UITableView *)table{
     

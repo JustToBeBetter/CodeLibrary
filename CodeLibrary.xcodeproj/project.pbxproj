@@ -27,6 +27,8 @@
 		A905AB751F4E966900325F01 /* LJZFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AB741F4E966900325F01 /* LJZFirstViewController.m */; };
 		A905AB781F4E967300325F01 /* LJZSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A905AB771F4E967300325F01 /* LJZSecondViewController.m */; };
 		A924B23E1E9F4D3A00BEC574 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A924B23D1E9F4D3A00BEC574 /* images.bundle */; };
+		A9A8DFEE21BB9B8A00AF13EB /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */; };
+		A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFF321BB9C2900AF13EB /* LJZShakeManager.m */; };
 		A9B0D99F1E9DF9970024361F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B0D99E1E9DF9970024361F /* main.m */; };
 		A9B0D9A21E9DF9970024361F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B0D9A11E9DF9970024361F /* AppDelegate.m */; };
 		A9B0D9A51E9DF9970024361F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B0D9A41E9DF9970024361F /* ViewController.m */; };
@@ -47,6 +49,7 @@
 		A9B358651EA8DA2B004618BB /* icon_heart_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B3585E1EA8DA2B004618BB /* icon_heart_2@3x.png */; };
 		A9B358661EA8DA2B004618BB /* icon_heart_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B3585F1EA8DA2B004618BB /* icon_heart_3@2x.png */; };
 		A9B358671EA8DA2B004618BB /* icon_heart_3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B358601EA8DA2B004618BB /* icon_heart_3@3x.png */; };
+		A9CA777421BBA0A500C63889 /* voice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A9CA777321BBA0A500C63889 /* voice.m4a */; };
 		A9F92A931F726F250084F623 /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A921F726F250084F623 /* Categories */; };
 		A9F92A951F726F570084F623 /* Generators in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A941F726F570084F623 /* Generators */; };
 		AC588C31B7636BDB55504965 /* libPods-CodeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E7A80F8F9C0BDAD8A78FFC /* libPods-CodeLibrary.a */; };
@@ -107,6 +110,10 @@
 		A905AB761F4E967300325F01 /* LJZSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJZSecondViewController.h; sourceTree = "<group>"; };
 		A905AB771F4E967300325F01 /* LJZSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZSecondViewController.m; sourceTree = "<group>"; };
 		A924B23D1E9F4D3A00BEC574 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+		A9A8DFEC21BB9B8A00AF13EB /* ShakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		A9A8DFF221BB9C2900AF13EB /* LJZShakeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZShakeManager.h; sourceTree = "<group>"; };
+		A9A8DFF321BB9C2900AF13EB /* LJZShakeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZShakeManager.m; sourceTree = "<group>"; };
 		A9B0D99A1E9DF9970024361F /* CodeLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B0D99E1E9DF9970024361F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9B0D9A01E9DF9970024361F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,6 +150,7 @@
 		A9B3585E1EA8DA2B004618BB /* icon_heart_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_heart_2@3x.png"; sourceTree = "<group>"; };
 		A9B3585F1EA8DA2B004618BB /* icon_heart_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_heart_3@2x.png"; sourceTree = "<group>"; };
 		A9B358601EA8DA2B004618BB /* icon_heart_3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_heart_3@3x.png"; sourceTree = "<group>"; };
+		A9CA777321BBA0A500C63889 /* voice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice.m4a; sourceTree = "<group>"; };
 		A9F92A921F726F250084F623 /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
 		A9F92A941F726F570084F623 /* Generators */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generators; sourceTree = "<group>"; };
 		FF7E25F2462D2303DA3F8455 /* Pods-CodeLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary.release.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +267,17 @@
 			name = Pages;
 			sourceTree = "<group>";
 		};
+		A9A8DFEB21BB9AF800AF13EB /* shake */ = {
+			isa = PBXGroup;
+			children = (
+				A9A8DFEC21BB9B8A00AF13EB /* ShakeViewController.h */,
+				A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */,
+				A9A8DFF221BB9C2900AF13EB /* LJZShakeManager.h */,
+				A9A8DFF321BB9C2900AF13EB /* LJZShakeManager.m */,
+			);
+			name = shake;
+			sourceTree = "<group>";
+		};
 		A9B0D9911E9DF9970024361F = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +374,7 @@
 		A9B0D9D61E9DFFF30024361F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A9A8DFEB21BB9AF800AF13EB /* shake */,
 				A9B358531EA8D8B5004618BB /* FireLike */,
 				A9B0D9DB1E9E29E80024361F /* Barrage */,
 				A905AABA1F414C7D00325F01 /* CountDown */,
@@ -371,6 +391,7 @@
 		A9B0D9D71E9E00010024361F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A9CA777321BBA0A500C63889 /* voice.m4a */,
 				A2285651205F823D00B6B2F5 /* IMG_0088.mp4 */,
 				A9B3585B1EA8DA2B004618BB /* icon_heart_1@2x.png */,
 				A9B3585C1EA8DA2B004618BB /* icon_heart_1@3x.png */,
@@ -489,6 +510,11 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 22DBSR3WQ7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A9B0D9B21E9DF9970024361F = {
 						CreatedOnToolsVersion = 8.3;
@@ -536,6 +562,7 @@
 				A9B0D9A81E9DF9970024361F /* Main.storyboard in Resources */,
 				A9F92A951F726F570084F623 /* Generators in Resources */,
 				A221F0F020A2A129000AC6A8 /* exportAppstore.plist in Resources */,
+				A9CA777421BBA0A500C63889 /* voice.m4a in Resources */,
 				A9B358641EA8DA2B004618BB /* icon_heart_2@2x.png in Resources */,
 				A924B23E1E9F4D3A00BEC574 /* images.bundle in Resources */,
 				A9B358621EA8DA2B004618BB /* icon_heart_1@2x.png in Resources */,
@@ -628,11 +655,13 @@
 				A9B0D9E11E9E2C0B0024361F /* LJZBarrageManager.m in Sources */,
 				A228564E205F625500B6B2F5 /* LJZTool.m in Sources */,
 				A228565C205F983F00B6B2F5 /* PaomaViewController.m in Sources */,
+				A9A8DFEE21BB9B8A00AF13EB /* ShakeViewController.m in Sources */,
 				A9B358561EA8D8DC004618BB /* LJZFireLikeView.m in Sources */,
 				A905AB721F4E84EA00325F01 /* TopBar.m in Sources */,
 				A225D68520B7FDD300654D27 /* GetNetWorkSpeed.m in Sources */,
 				A9B0D9DE1E9E2A170024361F /* LJZBarrageView.m in Sources */,
 				A2285655205F955400B6B2F5 /* FloatingViewViewController.m in Sources */,
+				A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */,
 				A9B0D9DA1E9E29DC0024361F /* BarrageViewController.m in Sources */,
 				A905AAB91F414C7500325F01 /* CountDownViewController.m in Sources */,
 				A2337B1520883EE80033090F /* LJZSegmentView.m in Sources */,
