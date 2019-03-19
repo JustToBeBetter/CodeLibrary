@@ -59,6 +59,10 @@
 		A9F92A931F726F250084F623 /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A921F726F250084F623 /* Categories */; };
 		A9F92A951F726F570084F623 /* Generators in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A941F726F570084F623 /* Generators */; };
 		AC588C31B7636BDB55504965 /* libPods-CodeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E7A80F8F9C0BDAD8A78FFC /* libPods-CodeLibrary.a */; };
+		AF282EED2240DE1C006B3B76 /* StickyHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EEC2240DE1C006B3B76 /* StickyHeaderViewController.m */; };
+		AF282EF02240DF7A006B3B76 /* LJZStickyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EEF2240DF7A006B3B76 /* LJZStickyHeaderView.m */; };
+		AF282EF32240E015006B3B76 /* LJZHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EF22240E015006B3B76 /* LJZHeaderRefreshView.m */; };
+		AF282EF62240E0BE006B3B76 /* UIScrollView+StickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EF52240E0BE006B3B76 /* UIScrollView+StickyHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +171,14 @@
 		A9CA777321BBA0A500C63889 /* voice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice.m4a; sourceTree = "<group>"; };
 		A9F92A921F726F250084F623 /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
 		A9F92A941F726F570084F623 /* Generators */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generators; sourceTree = "<group>"; };
+		AF282EEB2240DE1C006B3B76 /* StickyHeaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickyHeaderViewController.h; sourceTree = "<group>"; };
+		AF282EEC2240DE1C006B3B76 /* StickyHeaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickyHeaderViewController.m; sourceTree = "<group>"; };
+		AF282EEE2240DF7A006B3B76 /* LJZStickyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZStickyHeaderView.h; sourceTree = "<group>"; };
+		AF282EEF2240DF7A006B3B76 /* LJZStickyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZStickyHeaderView.m; sourceTree = "<group>"; };
+		AF282EF12240E015006B3B76 /* LJZHeaderRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZHeaderRefreshView.h; sourceTree = "<group>"; };
+		AF282EF22240E015006B3B76 /* LJZHeaderRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZHeaderRefreshView.m; sourceTree = "<group>"; };
+		AF282EF42240E0BE006B3B76 /* UIScrollView+StickyHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+StickyHeader.h"; sourceTree = "<group>"; };
+		AF282EF52240E0BE006B3B76 /* UIScrollView+StickyHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+StickyHeader.m"; sourceTree = "<group>"; };
 		FF7E25F2462D2303DA3F8455 /* Pods-CodeLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -399,6 +411,7 @@
 		A9B0D9D61E9DFFF30024361F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AF282EEA2240DDAC006B3B76 /* StickyHeaderView */,
 				A9A8DFEB21BB9AF800AF13EB /* shake */,
 				A9B358531EA8D8B5004618BB /* FireLike */,
 				A9B0D9DB1E9E29E80024361F /* Barrage */,
@@ -456,6 +469,21 @@
 				A9B358551EA8D8DC004618BB /* LJZFireLikeView.m */,
 			);
 			name = FireLike;
+			sourceTree = "<group>";
+		};
+		AF282EEA2240DDAC006B3B76 /* StickyHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				AF282EEB2240DE1C006B3B76 /* StickyHeaderViewController.h */,
+				AF282EEC2240DE1C006B3B76 /* StickyHeaderViewController.m */,
+				AF282EEE2240DF7A006B3B76 /* LJZStickyHeaderView.h */,
+				AF282EEF2240DF7A006B3B76 /* LJZStickyHeaderView.m */,
+				AF282EF12240E015006B3B76 /* LJZHeaderRefreshView.h */,
+				AF282EF22240E015006B3B76 /* LJZHeaderRefreshView.m */,
+				AF282EF42240E0BE006B3B76 /* UIScrollView+StickyHeader.h */,
+				AF282EF52240E0BE006B3B76 /* UIScrollView+StickyHeader.m */,
+			);
+			name = StickyHeaderView;
 			sourceTree = "<group>";
 		};
 		F284FC1AE56DD4EDD18038DD /* Pods */ = {
@@ -693,6 +721,8 @@
 				A228565C205F983F00B6B2F5 /* PaomaViewController.m in Sources */,
 				A9A8DFEE21BB9B8A00AF13EB /* ShakeViewController.m in Sources */,
 				A9B358561EA8D8DC004618BB /* LJZFireLikeView.m in Sources */,
+				AF282EF62240E0BE006B3B76 /* UIScrollView+StickyHeader.m in Sources */,
+				AF282EF02240DF7A006B3B76 /* LJZStickyHeaderView.m in Sources */,
 				A905AB721F4E84EA00325F01 /* TopBar.m in Sources */,
 				A225D68520B7FDD300654D27 /* GetNetWorkSpeed.m in Sources */,
 				A9B0D9DE1E9E2A170024361F /* LJZBarrageView.m in Sources */,
@@ -700,7 +730,9 @@
 				A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */,
 				A9B0D9DA1E9E29DC0024361F /* BarrageViewController.m in Sources */,
 				A905AAB91F414C7500325F01 /* CountDownViewController.m in Sources */,
+				AF282EED2240DE1C006B3B76 /* StickyHeaderViewController.m in Sources */,
 				A2337B1520883EE80033090F /* LJZSegmentView.m in Sources */,
+				AF282EF32240E015006B3B76 /* LJZHeaderRefreshView.m in Sources */,
 				A2285659205F958500B6B2F5 /* LJZFloatingView.m in Sources */,
 				A9B358521EA8D87E004618BB /* FireLikeViewController.m in Sources */,
 				A9B3585A1EA8D95F004618BB /* UIView+LJZ.m in Sources */,
