@@ -1,0 +1,48 @@
+Last login: Mon Dec  3 14:30:36 on ttys000
+maopao:~ admin$ cd Desktop/maopao/
+maopao:maopao admin$ ls
+Bubbling	README.md	commit.sh
+maopao:maopao admin$ cd Bubbling/
+maopao:Bubbling admin$ ls
+Bubbling			Podfile
+Bubbling.xcodeproj		Podfile.lock
+Bubbling.xcworkspace		Pods
+BubblingTests			sonar-project.properties
+BubblingUITests
+maopao:Bubbling admin$ ls -a
+.				BubblingTests
+..				BubblingUITests
+.DS_Store			Podfile
+.gitignore			Podfile.lock
+Bubbling			Pods
+Bubbling.xcodeproj		sonar-project.properties
+Bubbling.xcworkspace
+maopao:Bubbling admin$ vim .gitignore 
+
+
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
