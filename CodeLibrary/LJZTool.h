@@ -43,4 +43,5 @@
 
 //json字符串转json对象
 + (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
+
 @end

@@ -27,7 +27,7 @@
     [self.view addSubview:self.table];
 }
 - (void)initData{
-    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader"];
+    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord"];
 }
 - (UITableView *)table{
     
@@ -54,8 +54,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *vcStr = [NSString stringWithFormat:@"%@ViewController",_dataArray[indexPath.row]];
     UIViewController *VC = [[NSClassFromString(vcStr) alloc]init];
-    VC.title = _dataArray[indexPath.row];
-    [self.navigationController pushViewController:VC animated:YES];
+    
+    if ([_dataArray[indexPath.row] isEqualToString:@"LJZRecord"]) {
+        [self presentViewController:VC animated:YES completion:nil];
+    }else{
+        VC.title = _dataArray[indexPath.row];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -63,6 +63,34 @@
 		AF282EF02240DF7A006B3B76 /* LJZStickyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EEF2240DF7A006B3B76 /* LJZStickyHeaderView.m */; };
 		AF282EF32240E015006B3B76 /* LJZHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EF22240E015006B3B76 /* LJZHeaderRefreshView.m */; };
 		AF282EF62240E0BE006B3B76 /* UIScrollView+StickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EF52240E0BE006B3B76 /* UIScrollView+StickyHeader.m */; };
+		AF282EFA2240EB42006B3B76 /* LJZRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EF92240EB42006B3B76 /* LJZRecordViewController.m */; };
+		AF282EFD2240EBD5006B3B76 /* LJZMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EFC2240EBD5006B3B76 /* LJZMotionManager.m */; };
+		AF282F002240EC72006B3B76 /* LJZRecordEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282EFF2240EC72006B3B76 /* LJZRecordEncoder.m */; };
+		AF282F032240ED18006B3B76 /* LJZRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282F022240ED18006B3B76 /* LJZRecordManager.m */; };
+		AF282F062240EDFB006B3B76 /* LJZRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282F052240EDFB006B3B76 /* LJZRecordProgressView.m */; };
+		AF282F092240EE9D006B3B76 /* LJZRecordSuccessPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = AF282F082240EE9D006B3B76 /* LJZRecordSuccessPreview.m */; };
+		AF282F212240F1E6006B3B76 /* btn_video_flash_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F0B2240F1E6006B3B76 /* btn_video_flash_open@2x.png */; };
+		AF282F222240F1E6006B3B76 /* btn_cancel_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F0C2240F1E6006B3B76 /* btn_cancel_a@2x.png */; };
+		AF282F232240F1E6006B3B76 /* 短视频_重拍@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F0D2240F1E6006B3B76 /* 短视频_重拍@2x.png */; };
+		AF282F242240F1E6006B3B76 /* icon_btn_camera_flash_auto.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F0E2240F1E6006B3B76 /* icon_btn_camera_flash_auto.png */; };
+		AF282F252240F1E6006B3B76 /* btn_video_flash_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F0F2240F1E6006B3B76 /* btn_video_flash_close@2x.png */; };
+		AF282F262240F1E6006B3B76 /* icon_btn_camera_flash_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F102240F1E6006B3B76 /* icon_btn_camera_flash_on@2x.png */; };
+		AF282F272240F1E6006B3B76 /* btn_video_flip_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F112240F1E6006B3B76 /* btn_video_flip_camera.png */; };
+		AF282F282240F1E6006B3B76 /* 短视频_关闭.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F122240F1E6006B3B76 /* 短视频_关闭.png */; };
+		AF282F292240F1E6006B3B76 /* btn_video_flash_open.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F132240F1E6006B3B76 /* btn_video_flash_open.png */; };
+		AF282F2A2240F1E6006B3B76 /* sc_btn_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F142240F1E6006B3B76 /* sc_btn_take@2x.png */; };
+		AF282F2B2240F1E6006B3B76 /* btn_cancel_a.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F152240F1E6006B3B76 /* btn_cancel_a.png */; };
+		AF282F2C2240F1E6006B3B76 /* camera_focus_red.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F162240F1E6006B3B76 /* camera_focus_red.png */; };
+		AF282F2D2240F1E6006B3B76 /* camera_focus_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F172240F1E6006B3B76 /* camera_focus_red@2x.png */; };
+		AF282F2E2240F1E6006B3B76 /* icon_btn_camera_flash_on.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F182240F1E6006B3B76 /* icon_btn_camera_flash_on.png */; };
+		AF282F2F2240F1E6006B3B76 /* btn_video_flash_close.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F192240F1E6006B3B76 /* btn_video_flash_close.png */; };
+		AF282F302240F1E6006B3B76 /* btn_video_flip_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F1A2240F1E6006B3B76 /* btn_video_flip_camera@2x.png */; };
+		AF282F312240F1E6006B3B76 /* 短视频_完成@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F1B2240F1E6006B3B76 /* 短视频_完成@2x.png */; };
+		AF282F322240F1E6006B3B76 /* icon_btn_camera_flash_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F1C2240F1E6006B3B76 /* icon_btn_camera_flash_off@2x.png */; };
+		AF282F332240F1E6006B3B76 /* icon_btn_camera_flash_auto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F1D2240F1E6006B3B76 /* icon_btn_camera_flash_auto@2x.png */; };
+		AF282F342240F1E6006B3B76 /* 短视频_翻转@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F1E2240F1E6006B3B76 /* 短视频_翻转@2x.png */; };
+		AF282F352240F1E6006B3B76 /* sc_btn_take.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F1F2240F1E6006B3B76 /* sc_btn_take.png */; };
+		AF282F362240F1E6006B3B76 /* icon_btn_camera_flash_off.png in Resources */ = {isa = PBXBuildFile; fileRef = AF282F202240F1E6006B3B76 /* icon_btn_camera_flash_off.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +207,40 @@
 		AF282EF22240E015006B3B76 /* LJZHeaderRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZHeaderRefreshView.m; sourceTree = "<group>"; };
 		AF282EF42240E0BE006B3B76 /* UIScrollView+StickyHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+StickyHeader.h"; sourceTree = "<group>"; };
 		AF282EF52240E0BE006B3B76 /* UIScrollView+StickyHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+StickyHeader.m"; sourceTree = "<group>"; };
+		AF282EF82240EB42006B3B76 /* LJZRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZRecordViewController.h; sourceTree = "<group>"; };
+		AF282EF92240EB42006B3B76 /* LJZRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZRecordViewController.m; sourceTree = "<group>"; };
+		AF282EFB2240EBD5006B3B76 /* LJZMotionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZMotionManager.h; sourceTree = "<group>"; };
+		AF282EFC2240EBD5006B3B76 /* LJZMotionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZMotionManager.m; sourceTree = "<group>"; };
+		AF282EFE2240EC72006B3B76 /* LJZRecordEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZRecordEncoder.h; sourceTree = "<group>"; };
+		AF282EFF2240EC72006B3B76 /* LJZRecordEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZRecordEncoder.m; sourceTree = "<group>"; };
+		AF282F012240ED18006B3B76 /* LJZRecordManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZRecordManager.h; sourceTree = "<group>"; };
+		AF282F022240ED18006B3B76 /* LJZRecordManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZRecordManager.m; sourceTree = "<group>"; };
+		AF282F042240EDFB006B3B76 /* LJZRecordProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZRecordProgressView.h; sourceTree = "<group>"; };
+		AF282F052240EDFB006B3B76 /* LJZRecordProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZRecordProgressView.m; sourceTree = "<group>"; };
+		AF282F072240EE9D006B3B76 /* LJZRecordSuccessPreview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZRecordSuccessPreview.h; sourceTree = "<group>"; };
+		AF282F082240EE9D006B3B76 /* LJZRecordSuccessPreview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZRecordSuccessPreview.m; sourceTree = "<group>"; };
+		AF282F0B2240F1E6006B3B76 /* btn_video_flash_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_video_flash_open@2x.png"; sourceTree = "<group>"; };
+		AF282F0C2240F1E6006B3B76 /* btn_cancel_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_cancel_a@2x.png"; sourceTree = "<group>"; };
+		AF282F0D2240F1E6006B3B76 /* 短视频_重拍@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "短视频_重拍@2x.png"; sourceTree = "<group>"; };
+		AF282F0E2240F1E6006B3B76 /* icon_btn_camera_flash_auto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_btn_camera_flash_auto.png; sourceTree = "<group>"; };
+		AF282F0F2240F1E6006B3B76 /* btn_video_flash_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_video_flash_close@2x.png"; sourceTree = "<group>"; };
+		AF282F102240F1E6006B3B76 /* icon_btn_camera_flash_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_btn_camera_flash_on@2x.png"; sourceTree = "<group>"; };
+		AF282F112240F1E6006B3B76 /* btn_video_flip_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_video_flip_camera.png; sourceTree = "<group>"; };
+		AF282F122240F1E6006B3B76 /* 短视频_关闭.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "短视频_关闭.png"; sourceTree = "<group>"; };
+		AF282F132240F1E6006B3B76 /* btn_video_flash_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_video_flash_open.png; sourceTree = "<group>"; };
+		AF282F142240F1E6006B3B76 /* sc_btn_take@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_btn_take@2x.png"; sourceTree = "<group>"; };
+		AF282F152240F1E6006B3B76 /* btn_cancel_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_cancel_a.png; sourceTree = "<group>"; };
+		AF282F162240F1E6006B3B76 /* camera_focus_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_focus_red.png; sourceTree = "<group>"; };
+		AF282F172240F1E6006B3B76 /* camera_focus_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_focus_red@2x.png"; sourceTree = "<group>"; };
+		AF282F182240F1E6006B3B76 /* icon_btn_camera_flash_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_btn_camera_flash_on.png; sourceTree = "<group>"; };
+		AF282F192240F1E6006B3B76 /* btn_video_flash_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_video_flash_close.png; sourceTree = "<group>"; };
+		AF282F1A2240F1E6006B3B76 /* btn_video_flip_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_video_flip_camera@2x.png"; sourceTree = "<group>"; };
+		AF282F1B2240F1E6006B3B76 /* 短视频_完成@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "短视频_完成@2x.png"; sourceTree = "<group>"; };
+		AF282F1C2240F1E6006B3B76 /* icon_btn_camera_flash_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_btn_camera_flash_off@2x.png"; sourceTree = "<group>"; };
+		AF282F1D2240F1E6006B3B76 /* icon_btn_camera_flash_auto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_btn_camera_flash_auto@2x.png"; sourceTree = "<group>"; };
+		AF282F1E2240F1E6006B3B76 /* 短视频_翻转@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "短视频_翻转@2x.png"; sourceTree = "<group>"; };
+		AF282F1F2240F1E6006B3B76 /* sc_btn_take.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sc_btn_take.png; sourceTree = "<group>"; };
+		AF282F202240F1E6006B3B76 /* icon_btn_camera_flash_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_btn_camera_flash_off.png; sourceTree = "<group>"; };
 		FF7E25F2462D2303DA3F8455 /* Pods-CodeLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -411,6 +473,7 @@
 		A9B0D9D61E9DFFF30024361F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AF282EF72240E771006B3B76 /* VideoRecord */,
 				AF282EEA2240DDAC006B3B76 /* StickyHeaderView */,
 				A9A8DFEB21BB9AF800AF13EB /* shake */,
 				A9B358531EA8D8B5004618BB /* FireLike */,
@@ -484,6 +547,55 @@
 				AF282EF52240E0BE006B3B76 /* UIScrollView+StickyHeader.m */,
 			);
 			name = StickyHeaderView;
+			sourceTree = "<group>";
+		};
+		AF282EF72240E771006B3B76 /* VideoRecord */ = {
+			isa = PBXGroup;
+			children = (
+				AF282F0A2240F1E6006B3B76 /* videoresource */,
+				AF282EF82240EB42006B3B76 /* LJZRecordViewController.h */,
+				AF282EF92240EB42006B3B76 /* LJZRecordViewController.m */,
+				AF282EFB2240EBD5006B3B76 /* LJZMotionManager.h */,
+				AF282EFC2240EBD5006B3B76 /* LJZMotionManager.m */,
+				AF282EFE2240EC72006B3B76 /* LJZRecordEncoder.h */,
+				AF282EFF2240EC72006B3B76 /* LJZRecordEncoder.m */,
+				AF282F012240ED18006B3B76 /* LJZRecordManager.h */,
+				AF282F022240ED18006B3B76 /* LJZRecordManager.m */,
+				AF282F042240EDFB006B3B76 /* LJZRecordProgressView.h */,
+				AF282F052240EDFB006B3B76 /* LJZRecordProgressView.m */,
+				AF282F072240EE9D006B3B76 /* LJZRecordSuccessPreview.h */,
+				AF282F082240EE9D006B3B76 /* LJZRecordSuccessPreview.m */,
+			);
+			name = VideoRecord;
+			sourceTree = "<group>";
+		};
+		AF282F0A2240F1E6006B3B76 /* videoresource */ = {
+			isa = PBXGroup;
+			children = (
+				AF282F0B2240F1E6006B3B76 /* btn_video_flash_open@2x.png */,
+				AF282F0C2240F1E6006B3B76 /* btn_cancel_a@2x.png */,
+				AF282F0D2240F1E6006B3B76 /* 短视频_重拍@2x.png */,
+				AF282F0E2240F1E6006B3B76 /* icon_btn_camera_flash_auto.png */,
+				AF282F0F2240F1E6006B3B76 /* btn_video_flash_close@2x.png */,
+				AF282F102240F1E6006B3B76 /* icon_btn_camera_flash_on@2x.png */,
+				AF282F112240F1E6006B3B76 /* btn_video_flip_camera.png */,
+				AF282F122240F1E6006B3B76 /* 短视频_关闭.png */,
+				AF282F132240F1E6006B3B76 /* btn_video_flash_open.png */,
+				AF282F142240F1E6006B3B76 /* sc_btn_take@2x.png */,
+				AF282F152240F1E6006B3B76 /* btn_cancel_a.png */,
+				AF282F162240F1E6006B3B76 /* camera_focus_red.png */,
+				AF282F172240F1E6006B3B76 /* camera_focus_red@2x.png */,
+				AF282F182240F1E6006B3B76 /* icon_btn_camera_flash_on.png */,
+				AF282F192240F1E6006B3B76 /* btn_video_flash_close.png */,
+				AF282F1A2240F1E6006B3B76 /* btn_video_flip_camera@2x.png */,
+				AF282F1B2240F1E6006B3B76 /* 短视频_完成@2x.png */,
+				AF282F1C2240F1E6006B3B76 /* icon_btn_camera_flash_off@2x.png */,
+				AF282F1D2240F1E6006B3B76 /* icon_btn_camera_flash_auto@2x.png */,
+				AF282F1E2240F1E6006B3B76 /* 短视频_翻转@2x.png */,
+				AF282F1F2240F1E6006B3B76 /* sc_btn_take.png */,
+				AF282F202240F1E6006B3B76 /* icon_btn_camera_flash_off.png */,
+			);
+			path = videoresource;
 			sourceTree = "<group>";
 		};
 		F284FC1AE56DD4EDD18038DD /* Pods */ = {
@@ -613,25 +725,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B358661EA8DA2B004618BB /* icon_heart_3@2x.png in Resources */,
+				AF282F352240F1E6006B3B76 /* sc_btn_take.png in Resources */,
 				A93EEA622217FA62005E7148 /* pic1.png in Resources */,
+				AF282F212240F1E6006B3B76 /* btn_video_flash_open@2x.png in Resources */,
+				AF282F292240F1E6006B3B76 /* btn_video_flash_open.png in Resources */,
+				AF282F2F2240F1E6006B3B76 /* btn_video_flash_close.png in Resources */,
+				AF282F332240F1E6006B3B76 /* icon_btn_camera_flash_auto@2x.png in Resources */,
+				AF282F222240F1E6006B3B76 /* btn_cancel_a@2x.png in Resources */,
 				A9B0D9AD1E9DF9970024361F /* LaunchScreen.storyboard in Resources */,
 				A221F0F120A2A129000AC6A8 /* shell.sh in Resources */,
 				A9B0D9AA1E9DF9970024361F /* Assets.xcassets in Resources */,
 				A2285652205F823D00B6B2F5 /* IMG_0088.mp4 in Resources */,
+				AF282F322240F1E6006B3B76 /* icon_btn_camera_flash_off@2x.png in Resources */,
 				A9B0D9A81E9DF9970024361F /* Main.storyboard in Resources */,
+				AF282F362240F1E6006B3B76 /* icon_btn_camera_flash_off.png in Resources */,
+				AF282F252240F1E6006B3B76 /* btn_video_flash_close@2x.png in Resources */,
+				AF282F302240F1E6006B3B76 /* btn_video_flip_camera@2x.png in Resources */,
 				A9F92A951F726F570084F623 /* Generators in Resources */,
+				AF282F2B2240F1E6006B3B76 /* btn_cancel_a.png in Resources */,
+				AF282F262240F1E6006B3B76 /* icon_btn_camera_flash_on@2x.png in Resources */,
 				A221F0F020A2A129000AC6A8 /* exportAppstore.plist in Resources */,
 				A93EEA642217FA62005E7148 /* pic3.png in Resources */,
 				A9CA777421BBA0A500C63889 /* voice.m4a in Resources */,
+				AF282F312240F1E6006B3B76 /* 短视频_完成@2x.png in Resources */,
 				A93EEA632217FA62005E7148 /* pic2.png in Resources */,
+				AF282F2D2240F1E6006B3B76 /* camera_focus_red@2x.png in Resources */,
+				AF282F342240F1E6006B3B76 /* 短视频_翻转@2x.png in Resources */,
 				A9B358641EA8DA2B004618BB /* icon_heart_2@2x.png in Resources */,
+				AF282F2E2240F1E6006B3B76 /* icon_btn_camera_flash_on.png in Resources */,
+				AF282F232240F1E6006B3B76 /* 短视频_重拍@2x.png in Resources */,
 				A924B23E1E9F4D3A00BEC574 /* images.bundle in Resources */,
+				AF282F2C2240F1E6006B3B76 /* camera_focus_red.png in Resources */,
+				AF282F2A2240F1E6006B3B76 /* sc_btn_take@2x.png in Resources */,
 				A9B358621EA8DA2B004618BB /* icon_heart_1@2x.png in Resources */,
+				AF282F272240F1E6006B3B76 /* btn_video_flip_camera.png in Resources */,
 				A9B358671EA8DA2B004618BB /* icon_heart_3@3x.png in Resources */,
 				A221F0F220A2A129000AC6A8 /* exportTest.plist in Resources */,
+				AF282F242240F1E6006B3B76 /* icon_btn_camera_flash_auto.png in Resources */,
 				A9B358651EA8DA2B004618BB /* icon_heart_2@3x.png in Resources */,
 				A9F92A931F726F250084F623 /* Categories in Resources */,
 				A93EEA662217FA83005E7148 /* pic4.png in Resources */,
+				AF282F282240F1E6006B3B76 /* 短视频_关闭.png in Resources */,
 				A9B358631EA8DA2B004618BB /* icon_heart_1@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,6 +852,7 @@
 				A9B0D9E11E9E2C0B0024361F /* LJZBarrageManager.m in Sources */,
 				A93EEA5A2217F1F7005E7148 /* PhotoMakerViewController.m in Sources */,
 				A228564E205F625500B6B2F5 /* LJZTool.m in Sources */,
+				AF282F092240EE9D006B3B76 /* LJZRecordSuccessPreview.m in Sources */,
 				A228565C205F983F00B6B2F5 /* PaomaViewController.m in Sources */,
 				A9A8DFEE21BB9B8A00AF13EB /* ShakeViewController.m in Sources */,
 				A9B358561EA8D8DC004618BB /* LJZFireLikeView.m in Sources */,
@@ -725,13 +860,16 @@
 				AF282EF02240DF7A006B3B76 /* LJZStickyHeaderView.m in Sources */,
 				A905AB721F4E84EA00325F01 /* TopBar.m in Sources */,
 				A225D68520B7FDD300654D27 /* GetNetWorkSpeed.m in Sources */,
+				AF282EFA2240EB42006B3B76 /* LJZRecordViewController.m in Sources */,
 				A9B0D9DE1E9E2A170024361F /* LJZBarrageView.m in Sources */,
 				A2285655205F955400B6B2F5 /* FloatingViewViewController.m in Sources */,
 				A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */,
 				A9B0D9DA1E9E29DC0024361F /* BarrageViewController.m in Sources */,
+				AF282F002240EC72006B3B76 /* LJZRecordEncoder.m in Sources */,
 				A905AAB91F414C7500325F01 /* CountDownViewController.m in Sources */,
 				AF282EED2240DE1C006B3B76 /* StickyHeaderViewController.m in Sources */,
 				A2337B1520883EE80033090F /* LJZSegmentView.m in Sources */,
+				AF282F062240EDFB006B3B76 /* LJZRecordProgressView.m in Sources */,
 				AF282EF32240E015006B3B76 /* LJZHeaderRefreshView.m in Sources */,
 				A2285659205F958500B6B2F5 /* LJZFloatingView.m in Sources */,
 				A9B358521EA8D87E004618BB /* FireLikeViewController.m in Sources */,
@@ -741,9 +879,11 @@
 				A905AB6E1F4E84CE00325F01 /* PagesViewController.m in Sources */,
 				A905AB751F4E966900325F01 /* LJZFirstViewController.m in Sources */,
 				A9B0D99F1E9DF9970024361F /* main.m in Sources */,
+				AF282EFD2240EBD5006B3B76 /* LJZMotionManager.m in Sources */,
 				A225D68120B7FD8100654D27 /* NetworkSpeedViewController.m in Sources */,
 				A228564A205F611100B6B2F5 /* GifMakerViewController.m in Sources */,
 				A905AB781F4E967300325F01 /* LJZSecondViewController.m in Sources */,
+				AF282F032240ED18006B3B76 /* LJZRecordManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
