@@ -331,6 +331,9 @@ typedef NS_ENUM(NSInteger, PanDirection){
 }
 - (void)isDraging:(BOOL)isDraging{
      _isDraging = isDraging;
+    if (self.dragingBlock) {
+        self.dragingBlock(isDraging);
+    }
 }
 - (void)replayVideo{
     self.time = 0;

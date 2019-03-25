@@ -48,6 +48,14 @@
     [self.playerView playWithUrl:[NSURL fileURLWithPath:path]];
     
     [self.view addGestureRecognizer:self.panGesture];
+    
+    self.playerView.dragingBlock = ^(BOOL isDraging) {
+        if (isDraging) {
+            weakself.panGesture.enabled = NO;
+        }else{
+            weakself.panGesture.enabled = YES;
+        }
+    };
 
 }
 
