@@ -11,4 +11,5 @@
 @interface LJZFireLikeView : UIView
 
 - (void)fireLike;
+
 @end

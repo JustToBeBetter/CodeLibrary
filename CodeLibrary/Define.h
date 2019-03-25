@@ -33,5 +33,6 @@
 #import <SDWebImage/UIImage+GIF.h>
 #import "FLAnimatedImageView.h"
 #import "FLAnimatedImage.h"
+#import <Masonry.h>
 
 #endif /* Define_h */

@@ -27,7 +27,7 @@
     [self.view addSubview:self.table];
 }
 - (void)initData{
-    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord"];
+    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer"];
 }
 - (UITableView *)table{
     
@@ -55,7 +55,9 @@
     NSString *vcStr = [NSString stringWithFormat:@"%@ViewController",_dataArray[indexPath.row]];
     UIViewController *VC = [[NSClassFromString(vcStr) alloc]init];
     
-    if ([_dataArray[indexPath.row] isEqualToString:@"LJZRecord"]) {
+    if ([_dataArray[indexPath.row] isEqualToString:@"LJZRecord"] ||
+        [_dataArray[indexPath.row] isEqualToString:@"LJZPlayer"]) {
+        
         [self presentViewController:VC animated:YES completion:nil];
     }else{
         VC.title = _dataArray[indexPath.row];

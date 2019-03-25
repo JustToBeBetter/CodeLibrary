@@ -16,7 +16,13 @@
 typedef void (^InterceptBlock)(NSError *error,NSURL *url);
 typedef void (^CompleteBlock) (NSError *error,NSURL *gifUrl);
 
-typedef NS_ENUM(NSInteger, GIFSize) { GIFSizeVeryLow = 2, GIFSizeLow = 3, GIFSizeMedium = 5, GIFSizeHigh = 7, GIFSizeOriginal = 10 };
+typedef NS_ENUM(NSInteger, GIFSize){
+    GIFSizeVeryLow = 2,
+    GIFSizeLow = 3,
+    GIFSizeMedium = 5,
+    GIFSizeHigh = 7,
+    GIFSizeOriginal = 10
+};
 
 @interface GifMakerViewController ()
 
