@@ -14,8 +14,14 @@ SystemSoundID sound;
 
 
 @implementation LJZShakeManager
-void systemAudioCallback (SystemSoundID soundID, void* clientData) {
+
+//震动回调 保持一直震动
+void systemVibrateCallback (SystemSoundID soundID, void* clientData) {
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
+//音效回调 一直播放
+void systemAudioCallback (SystemSoundID soundID, void* clientData) {
+    AudioServicesPlaySystemSound(sound);
 }
 
 + (instancetype)sharedInstance{
@@ -53,21 +59,21 @@ void systemAudioCallback (SystemSoundID soundID, void* clientData) {
     });
 }
 - (void)beginShake{
-    AudioServicesAddSystemSoundCompletion(kSystemSoundID_Vibrate, NULL, NULL, systemAudioCallback, NULL);
+    AudioServicesAddSystemSoundCompletion(kSystemSoundID_Vibrate, NULL, NULL, systemVibrateCallback, NULL);
     AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);
 }
 - (void)stopShake{
     AudioServicesRemoveSystemSoundCompletion(kSystemSoundID_Vibrate);
-    
+}
+- (void)stopPlaySound{
+    AudioServicesRemoveSystemSoundCompletion(sound);
 }
 - (void)playSound{
-    
+    //自定义系统音效
     NSString *path = [[NSBundle mainBundle] pathForResource:@"voice" ofType:@"m4a"];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:path], &sound);
     AudioServicesAddSystemSoundCompletion(sound, NULL, NULL, systemAudioCallback, NULL);
-    AudioServicesAddSystemSoundCompletion(sound, NULL, NULL, systemAudioCallback, NULL);
     AudioServicesPlaySystemSound(sound);
-    
 }
 
 

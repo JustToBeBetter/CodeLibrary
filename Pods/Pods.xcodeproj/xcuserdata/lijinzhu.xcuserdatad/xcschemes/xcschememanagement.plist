@@ -16,12 +16,27 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>FLAnimatedImage.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>MJRefresh.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Masonry.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
@@ -45,12 +60,27 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>SVProgressHUD.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>YXBase.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>YXBase.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>YXCommon.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>YXCommon.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>9</integer>

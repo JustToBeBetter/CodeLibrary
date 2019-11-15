@@ -765,7 +765,7 @@
 				TargetAttributes = {
 					A9B0D9991E9DF9970024361F = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 22DBSR3WQ7;
+						DevelopmentTeam = XM949TYWMN;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -791,6 +791,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1137,15 +1138,16 @@
 			baseConfigurationReference = A7A1567C5FB196E2E349C7A9 /* Pods-CodeLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XM949TYWMN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CodeLibrary/CodePrefix.pch;
 				INFOPLIST_FILE = CodeLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.youxiang.CodeLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljz.CodeLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1157,15 +1159,16 @@
 			baseConfigurationReference = FF7E25F2462D2303DA3F8455 /* Pods-CodeLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XM949TYWMN;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CodeLibrary/CodePrefix.pch;
 				INFOPLIST_FILE = CodeLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.youxiang.CodeLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljz.CodeLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};

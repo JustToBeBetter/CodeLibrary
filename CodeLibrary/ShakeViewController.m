@@ -24,6 +24,7 @@
 }
 - (void)stopShake{
        [[LJZShakeManager sharedInstance]stopShake];
+       [[LJZShakeManager sharedInstance]stopPlaySound];
 }
 
 - (void)didReceiveMemoryWarning {

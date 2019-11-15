@@ -15,6 +15,8 @@
 - (void)beginShake;
 /** 停止震动*/
 - (void)stopShake;
+/** 开始播放音乐*/
 - (void)playSound;
-
+/** 停止播放音乐 最少播放一遍*/
+- (void)stopPlaySound;
 @end
