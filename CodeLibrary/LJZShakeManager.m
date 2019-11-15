@@ -66,7 +66,11 @@ void systemAudioCallback (SystemSoundID soundID, void* clientData) {
     AudioServicesRemoveSystemSoundCompletion(kSystemSoundID_Vibrate);
 }
 - (void)stopPlaySound{
-    AudioServicesRemoveSystemSoundCompletion(sound);
+    //立即停止
+    AudioServicesDisposeSystemSoundID(sound);
+    //播放一遍停止
+//    AudioServicesRemoveSystemSoundCompletion(sound);
+
 }
 - (void)playSound{
     //自定义系统音效
