@@ -241,7 +241,12 @@ typedef NS_ENUM(NSUInteger, ContentViewGravity) {
             BOOL adjust = !self.revealed || (velocity < 0 && (-velocity < self.contentHeight));
             
             if (!self.revealed && adjust){
-                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+//                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+                if (@available(iOS 11.0, *))
+                  {
+                      UIImpactFeedbackGenerator *feedBackGenertor = [[UIImpactFeedbackGenerator alloc] initWithStyle:UIImpactFeedbackStyleMedium];
+                      [feedBackGenertor impactOccurred];
+                   }
             }
             [self setRevealed:!self.revealed animated:YES adjustContentOffset:adjust];
         }else if (self.bounds.size.height > 0 && self.bounds.size.height < self.contentHeight){

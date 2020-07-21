@@ -18,15 +18,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    [LJZShakeManager sharedInstance];
+    [self performSelector:@selector(beginShake) withObject:nil afterDelay:600];
+}
+- (void)beginShake{
     [[LJZShakeManager sharedInstance]beginShake];
     [[LJZShakeManager sharedInstance]playSound];
-    [self performSelector:@selector(stopShake) withObject:nil afterDelay:29];
+    [self performSelector:@selector(stopShake) withObject:nil afterDelay:20];
 }
 - (void)stopShake{
        [[LJZShakeManager sharedInstance]stopShake];
        [[LJZShakeManager sharedInstance]stopPlaySound];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

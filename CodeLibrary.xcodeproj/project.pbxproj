@@ -33,6 +33,9 @@
 		A93EEA632217FA62005E7148 /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = A93EEA602217FA61005E7148 /* pic2.png */; };
 		A93EEA642217FA62005E7148 /* pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = A93EEA612217FA62005E7148 /* pic3.png */; };
 		A93EEA662217FA83005E7148 /* pic4.png in Resources */ = {isa = PBXBuildFile; fileRef = A93EEA652217FA83005E7148 /* pic4.png */; };
+		A97D75DF24C6B95A0093EC9E /* BlurEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D75DE24C6B95A0093EC9E /* BlurEffectViewController.m */; };
+		A97D75E224C6BB170093EC9E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D75E024C6BB170093EC9E /* UIImage+ImageEffects.m */; };
+		A97D75E424C6BBC50093EC9E /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A97D75E324C6BBC50093EC9E /* test.jpeg */; };
 		A9A8DFEE21BB9B8A00AF13EB /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */; };
 		A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFF321BB9C2900AF13EB /* LJZShakeManager.m */; };
 		A9B0D99F1E9DF9970024361F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B0D99E1E9DF9970024361F /* main.m */; };
@@ -173,6 +176,11 @@
 		A93EEA602217FA61005E7148 /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic2.png; sourceTree = "<group>"; };
 		A93EEA612217FA62005E7148 /* pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic3.png; sourceTree = "<group>"; };
 		A93EEA652217FA83005E7148 /* pic4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic4.png; sourceTree = "<group>"; };
+		A97D75DD24C6B95A0093EC9E /* BlurEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlurEffectViewController.h; sourceTree = "<group>"; };
+		A97D75DE24C6B95A0093EC9E /* BlurEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurEffectViewController.m; sourceTree = "<group>"; };
+		A97D75E024C6BB170093EC9E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		A97D75E124C6BB170093EC9E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		A97D75E324C6BBC50093EC9E /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
 		A9A8DFEC21BB9B8A00AF13EB /* ShakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		A9A8DFF221BB9C2900AF13EB /* LJZShakeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZShakeManager.h; sourceTree = "<group>"; };
@@ -410,6 +418,17 @@
 			name = PhotoMaker;
 			sourceTree = "<group>";
 		};
+		A97D75DC24C6B8780093EC9E /* blurEffect */ = {
+			isa = PBXGroup;
+			children = (
+				A97D75E124C6BB170093EC9E /* UIImage+ImageEffects.h */,
+				A97D75E024C6BB170093EC9E /* UIImage+ImageEffects.m */,
+				A97D75DD24C6B95A0093EC9E /* BlurEffectViewController.h */,
+				A97D75DE24C6B95A0093EC9E /* BlurEffectViewController.m */,
+			);
+			name = blurEffect;
+			sourceTree = "<group>";
+		};
 		A9A8DFEB21BB9AF800AF13EB /* shake */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +536,7 @@
 		A9B0D9D61E9DFFF30024361F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A97D75DC24C6B8780093EC9E /* blurEffect */,
 				AF170AB62248D44D00353B43 /* Player */,
 				AF282EF72240E771006B3B76 /* VideoRecord */,
 				AF282EEA2240DDAC006B3B76 /* StickyHeaderView */,
@@ -550,6 +570,7 @@
 				A9B3585E1EA8DA2B004618BB /* icon_heart_2@3x.png */,
 				A9B3585F1EA8DA2B004618BB /* icon_heart_3@2x.png */,
 				A9B358601EA8DA2B004618BB /* icon_heart_3@3x.png */,
+				A97D75E324C6BBC50093EC9E /* test.jpeg */,
 				A924B23D1E9F4D3A00BEC574 /* images.bundle */,
 			);
 			name = Resource;
@@ -813,6 +834,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B358661EA8DA2B004618BB /* icon_heart_3@2x.png in Resources */,
+				A97D75E424C6BBC50093EC9E /* test.jpeg in Resources */,
 				AF170ADA2248D44D00353B43 /* player_pause@3x.png in Resources */,
 				AF170ADD2248D44D00353B43 /* player_close@2x.png in Resources */,
 				AF282F352240F1E6006B3B76 /* sc_btn_take.png in Resources */,
@@ -964,6 +986,8 @@
 				A2285655205F955400B6B2F5 /* FloatingViewViewController.m in Sources */,
 				A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */,
 				AF170AD62248D44D00353B43 /* LJZAVPlayer.m in Sources */,
+				A97D75DF24C6B95A0093EC9E /* BlurEffectViewController.m in Sources */,
+				A97D75E224C6BB170093EC9E /* UIImage+ImageEffects.m in Sources */,
 				A9B0D9DA1E9E29DC0024361F /* BarrageViewController.m in Sources */,
 				AF282F002240EC72006B3B76 /* LJZRecordEncoder.m in Sources */,
 				AF170AD82248D44D00353B43 /* LJZPlayerSlider.m in Sources */,
