@@ -58,6 +58,8 @@
 		A9B358651EA8DA2B004618BB /* icon_heart_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B3585E1EA8DA2B004618BB /* icon_heart_2@3x.png */; };
 		A9B358661EA8DA2B004618BB /* icon_heart_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B3585F1EA8DA2B004618BB /* icon_heart_3@2x.png */; };
 		A9B358671EA8DA2B004618BB /* icon_heart_3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B358601EA8DA2B004618BB /* icon_heart_3@3x.png */; };
+		A9B6C49925E61D1A00901FB4 /* xiaomi.webp in Resources */ = {isa = PBXBuildFile; fileRef = A9B6C49825E61D1A00901FB4 /* xiaomi.webp */; };
+		A9B6C49D25E61FE600901FB4 /* GifWebPImgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6C49C25E61FE600901FB4 /* GifWebPImgViewController.m */; };
 		A9CA777421BBA0A500C63889 /* voice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A9CA777321BBA0A500C63889 /* voice.m4a */; };
 		A9F92A931F726F250084F623 /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A921F726F250084F623 /* Categories */; };
 		A9F92A951F726F570084F623 /* Generators in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A941F726F570084F623 /* Generators */; };
@@ -221,6 +223,9 @@
 		A9B3585E1EA8DA2B004618BB /* icon_heart_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_heart_2@3x.png"; sourceTree = "<group>"; };
 		A9B3585F1EA8DA2B004618BB /* icon_heart_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_heart_3@2x.png"; sourceTree = "<group>"; };
 		A9B358601EA8DA2B004618BB /* icon_heart_3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_heart_3@3x.png"; sourceTree = "<group>"; };
+		A9B6C49825E61D1A00901FB4 /* xiaomi.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = xiaomi.webp; sourceTree = "<group>"; };
+		A9B6C49B25E61FE600901FB4 /* GifWebPImgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifWebPImgViewController.h; sourceTree = "<group>"; };
+		A9B6C49C25E61FE600901FB4 /* GifWebPImgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifWebPImgViewController.m; sourceTree = "<group>"; };
 		A9CA777321BBA0A500C63889 /* voice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice.m4a; sourceTree = "<group>"; };
 		A9F92A921F726F250084F623 /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
 		A9F92A941F726F570084F623 /* Generators */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generators; sourceTree = "<group>"; };
@@ -536,6 +541,7 @@
 		A9B0D9D61E9DFFF30024361F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A9B6C49A25E61F9700901FB4 /* gifwebpImg */,
 				A97D75DC24C6B8780093EC9E /* blurEffect */,
 				AF170AB62248D44D00353B43 /* Player */,
 				AF282EF72240E771006B3B76 /* VideoRecord */,
@@ -571,6 +577,7 @@
 				A9B3585F1EA8DA2B004618BB /* icon_heart_3@2x.png */,
 				A9B358601EA8DA2B004618BB /* icon_heart_3@3x.png */,
 				A97D75E324C6BBC50093EC9E /* test.jpeg */,
+				A9B6C49825E61D1A00901FB4 /* xiaomi.webp */,
 				A924B23D1E9F4D3A00BEC574 /* images.bundle */,
 			);
 			name = Resource;
@@ -598,6 +605,15 @@
 				A9B358551EA8D8DC004618BB /* LJZFireLikeView.m */,
 			);
 			name = FireLike;
+			sourceTree = "<group>";
+		};
+		A9B6C49A25E61F9700901FB4 /* gifwebpImg */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6C49B25E61FE600901FB4 /* GifWebPImgViewController.h */,
+				A9B6C49C25E61FE600901FB4 /* GifWebPImgViewController.m */,
+			);
+			name = gifwebpImg;
 			sourceTree = "<group>";
 		};
 		AF170AB62248D44D00353B43 /* Player */ = {
@@ -726,7 +742,6 @@
 				A9B0D9961E9DF9970024361F /* Sources */,
 				A9B0D9971E9DF9970024361F /* Frameworks */,
 				A9B0D9981E9DF9970024361F /* Resources */,
-				1AF7E095FE1075ED0FB945FF /* [CP] Embed Pods Frameworks */,
 				C578F5790EF291014D55D0F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -855,6 +870,7 @@
 				A9B0D9A81E9DF9970024361F /* Main.storyboard in Resources */,
 				AF282F362240F1E6006B3B76 /* icon_btn_camera_flash_off.png in Resources */,
 				AF282F252240F1E6006B3B76 /* btn_video_flash_close@2x.png in Resources */,
+				A9B6C49925E61D1A00901FB4 /* xiaomi.webp in Resources */,
 				AF282F302240F1E6006B3B76 /* btn_video_flip_camera@2x.png in Resources */,
 				A9F92A951F726F570084F623 /* Generators in Resources */,
 				AF282F2B2240F1E6006B3B76 /* btn_cancel_a.png in Resources */,
@@ -905,21 +921,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1AF7E095FE1075ED0FB945FF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4F419F737326375ADF25CEB9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -944,17 +945,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -999,6 +1001,7 @@
 				AF170AD22248D44D00353B43 /* LJZPlayerView.m in Sources */,
 				AF170AD52248D44D00353B43 /* LJZPlayerLayerView.m in Sources */,
 				A2285659205F958500B6B2F5 /* LJZFloatingView.m in Sources */,
+				A9B6C49D25E61FE600901FB4 /* GifWebPImgViewController.m in Sources */,
 				AF170AD32248D44D00353B43 /* LJZPlayerToolsView.m in Sources */,
 				A9B358521EA8D87E004618BB /* FireLikeViewController.m in Sources */,
 				A9B3585A1EA8D95F004618BB /* UIView+LJZ.m in Sources */,

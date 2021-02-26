@@ -381,7 +381,7 @@
     NSString *hour1= [self hourIntervalFromNowtoDate:expireDateStr];
     NSString *sec1= [self secondIntervalFromNowtoDate:expireDateStr];
     
-    NSString *data  = @"2016-08-30 00:00:00";
+    NSString *data  = @"2021-02-05 12:40:00";
     NSDateComponents *dateCom2 = [self intervalSinceNowWithDataStr:data];
     NSString *day2= [self dayIntervalFromNowtoDate:data];
     NSString *hour2= [self hourIntervalFromNowtoDate:data];

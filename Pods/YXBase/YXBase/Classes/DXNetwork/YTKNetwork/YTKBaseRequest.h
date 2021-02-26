@@ -183,7 +183,7 @@ typedef void(^YTKRequestCompletionBlock)(__kindof YTKBaseRequest *request);
 /// @name Request Configuration
 ///=============================================================================
 
-///  Tag can be used to identify request. Default value is 0.
+///  Tag can be used to identify request. Default value is 0
 @property (nonatomic) NSInteger tag;
 
 ///  The userInfo can be used to store additional info about the request. Default is nil.

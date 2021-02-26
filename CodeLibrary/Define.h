@@ -34,5 +34,7 @@
 #import "FLAnimatedImageView.h"
 #import "FLAnimatedImage.h"
 #import <Masonry.h>
+#import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
+#import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
 
 #endif /* Define_h */
