@@ -36,6 +36,7 @@
 		A97D75DF24C6B95A0093EC9E /* BlurEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D75DE24C6B95A0093EC9E /* BlurEffectViewController.m */; };
 		A97D75E224C6BB170093EC9E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D75E024C6BB170093EC9E /* UIImage+ImageEffects.m */; };
 		A97D75E424C6BBC50093EC9E /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A97D75E324C6BBC50093EC9E /* test.jpeg */; };
+		A98EE9482668A6350085DB1A /* LJZDeveiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */; };
 		A9A8DFEE21BB9B8A00AF13EB /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */; };
 		A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFF321BB9C2900AF13EB /* LJZShakeManager.m */; };
 		A9B0D99F1E9DF9970024361F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B0D99E1E9DF9970024361F /* main.m */; };
@@ -183,6 +184,8 @@
 		A97D75E024C6BB170093EC9E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		A97D75E124C6BB170093EC9E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		A97D75E324C6BBC50093EC9E /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
+		A98EE9462668A6350085DB1A /* LJZDeveiceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZDeveiceInfo.h; sourceTree = "<group>"; };
+		A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZDeveiceInfo.m; sourceTree = "<group>"; };
 		A9A8DFEC21BB9B8A00AF13EB /* ShakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		A9A8DFF221BB9C2900AF13EB /* LJZShakeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZShakeManager.h; sourceTree = "<group>"; };
@@ -533,6 +536,8 @@
 				A9B358591EA8D95F004618BB /* UIView+LJZ.m */,
 				A228564C205F625500B6B2F5 /* LJZTool.h */,
 				A228564D205F625500B6B2F5 /* LJZTool.m */,
+				A98EE9462668A6350085DB1A /* LJZDeveiceInfo.h */,
+				A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */,
 				A9F92A941F726F570084F623 /* Generators */,
 			);
 			name = Utility;
@@ -984,6 +989,7 @@
 				A905AB721F4E84EA00325F01 /* TopBar.m in Sources */,
 				A225D68520B7FDD300654D27 /* GetNetWorkSpeed.m in Sources */,
 				AF282EFA2240EB42006B3B76 /* LJZRecordViewController.m in Sources */,
+				A98EE9482668A6350085DB1A /* LJZDeveiceInfo.m in Sources */,
 				A9B0D9DE1E9E2A170024361F /* LJZBarrageView.m in Sources */,
 				A2285655205F955400B6B2F5 /* FloatingViewViewController.m in Sources */,
 				A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */,
