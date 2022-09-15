@@ -62,6 +62,8 @@
 		A9B6C49925E61D1A00901FB4 /* xiaomi.webp in Resources */ = {isa = PBXBuildFile; fileRef = A9B6C49825E61D1A00901FB4 /* xiaomi.webp */; };
 		A9B6C49D25E61FE600901FB4 /* GifWebPImgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6C49C25E61FE600901FB4 /* GifWebPImgViewController.m */; };
 		A9CA777421BBA0A500C63889 /* voice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A9CA777321BBA0A500C63889 /* voice.m4a */; };
+		A9CFA80E28D2CF2900DE8AD8 /* LJZLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFA80D28D2CF2900DE8AD8 /* LJZLogFormatter.m */; };
+		A9CFA81228D2CFC100DE8AD8 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFA81128D2CFC100DE8AD8 /* LogViewController.m */; };
 		A9F92A931F726F250084F623 /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A921F726F250084F623 /* Categories */; };
 		A9F92A951F726F570084F623 /* Generators in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A941F726F570084F623 /* Generators */; };
 		AC588C31B7636BDB55504965 /* libPods-CodeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E7A80F8F9C0BDAD8A78FFC /* libPods-CodeLibrary.a */; };
@@ -230,6 +232,10 @@
 		A9B6C49B25E61FE600901FB4 /* GifWebPImgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifWebPImgViewController.h; sourceTree = "<group>"; };
 		A9B6C49C25E61FE600901FB4 /* GifWebPImgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifWebPImgViewController.m; sourceTree = "<group>"; };
 		A9CA777321BBA0A500C63889 /* voice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice.m4a; sourceTree = "<group>"; };
+		A9CFA80C28D2CF2900DE8AD8 /* LJZLogFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZLogFormatter.h; sourceTree = "<group>"; };
+		A9CFA80D28D2CF2900DE8AD8 /* LJZLogFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZLogFormatter.m; sourceTree = "<group>"; };
+		A9CFA81028D2CFC100DE8AD8 /* LogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		A9CFA81128D2CFC100DE8AD8 /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
 		A9F92A921F726F250084F623 /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
 		A9F92A941F726F570084F623 /* Generators */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generators; sourceTree = "<group>"; };
 		AF170AB72248D44D00353B43 /* LJZSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZSlider.m; sourceTree = "<group>"; };
@@ -538,6 +544,8 @@
 				A228564D205F625500B6B2F5 /* LJZTool.m */,
 				A98EE9462668A6350085DB1A /* LJZDeveiceInfo.h */,
 				A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */,
+				A9CFA80C28D2CF2900DE8AD8 /* LJZLogFormatter.h */,
+				A9CFA80D28D2CF2900DE8AD8 /* LJZLogFormatter.m */,
 				A9F92A941F726F570084F623 /* Generators */,
 			);
 			name = Utility;
@@ -546,6 +554,7 @@
 		A9B0D9D61E9DFFF30024361F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A9CFA80F28D2CF7D00DE8AD8 /* log */,
 				A9B6C49A25E61F9700901FB4 /* gifwebpImg */,
 				A97D75DC24C6B8780093EC9E /* blurEffect */,
 				AF170AB62248D44D00353B43 /* Player */,
@@ -619,6 +628,15 @@
 				A9B6C49C25E61FE600901FB4 /* GifWebPImgViewController.m */,
 			);
 			name = gifwebpImg;
+			sourceTree = "<group>";
+		};
+		A9CFA80F28D2CF7D00DE8AD8 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				A9CFA81028D2CFC100DE8AD8 /* LogViewController.h */,
+				A9CFA81128D2CFC100DE8AD8 /* LogViewController.m */,
+			);
+			name = log;
 			sourceTree = "<group>";
 		};
 		AF170AB62248D44D00353B43 /* Player */ = {
@@ -951,12 +969,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -993,6 +1009,7 @@
 				A9B0D9DE1E9E2A170024361F /* LJZBarrageView.m in Sources */,
 				A2285655205F955400B6B2F5 /* FloatingViewViewController.m in Sources */,
 				A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */,
+				A9CFA81228D2CFC100DE8AD8 /* LogViewController.m in Sources */,
 				AF170AD62248D44D00353B43 /* LJZAVPlayer.m in Sources */,
 				A97D75DF24C6B95A0093EC9E /* BlurEffectViewController.m in Sources */,
 				A97D75E224C6BB170093EC9E /* UIImage+ImageEffects.m in Sources */,
@@ -1009,6 +1026,7 @@
 				A2285659205F958500B6B2F5 /* LJZFloatingView.m in Sources */,
 				A9B6C49D25E61FE600901FB4 /* GifWebPImgViewController.m in Sources */,
 				AF170AD32248D44D00353B43 /* LJZPlayerToolsView.m in Sources */,
+				A9CFA80E28D2CF2900DE8AD8 /* LJZLogFormatter.m in Sources */,
 				A9B358521EA8D87E004618BB /* FireLikeViewController.m in Sources */,
 				A9B3585A1EA8D95F004618BB /* UIView+LJZ.m in Sources */,
 				A9B0D9A21E9DF9970024361F /* AppDelegate.m in Sources */,

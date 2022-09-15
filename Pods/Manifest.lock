@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
   - FLAnimatedImage (1.0.12)
   - libwebp (1.2.0):
     - libwebp/demux (= 1.2.0)
@@ -25,7 +28,6 @@ PODS:
     - libwebp/demux
   - libwebp/webp (1.2.0)
   - Masonry (1.1.0)
-  - MJRefresh (3.5.0)
   - SDWebImage (5.9.5):
     - SDWebImage/Core (= 5.9.5)
   - SDWebImage/Core (5.9.5)
@@ -36,52 +38,23 @@ PODS:
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.7)
   - SVProgressHUD (2.2.5)
-  - YXBase (0.2.4):
-    - SDWebImage
-    - YXBase/CatonMonitoring (= 0.2.4)
-    - YXBase/DXBaseModel (= 0.2.4)
-    - YXBase/DXCategory (= 0.2.4)
-    - YXBase/DXNetwork (= 0.2.4)
-  - YXBase/CatonMonitoring (0.2.4):
-    - SDWebImage
-  - YXBase/DXBaseModel (0.2.4):
-    - SDWebImage
-  - YXBase/DXCategory (0.2.4):
-    - SDWebImage
-  - YXBase/DXNetwork (0.2.4):
-    - AFNetworking (~> 3.1.0)
-    - SDWebImage
-  - YXCommon (0.1.5):
-    - YXBase/DXCategory
-    - YXCommon/DXBaseTool (= 0.1.5)
-    - YXCommon/DXMediator (= 0.1.5)
-  - YXCommon/DXBaseTool (0.1.5):
-    - MJRefresh
-    - SVProgressHUD
-    - YXBase/DXCategory
-  - YXCommon/DXMediator (0.1.5):
-    - YXBase/DXCategory
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaLumberjack
   - Masonry
   - SDWebImage
   - SDWebImageFLPlugin
   - SDWebImageWebPCoder
   - SVProgressHUD
-  - YXBase (~> 0.2.4)
-  - YXCommon (~> 0.1.5)
 
 SPEC REPOS:
-  https://code.aliyun.com/youxiang-ios-component/JCLiveIOSSpecs.git:
-    - YXBase
-    - YXCommon
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - CocoaLumberjack
     - FLAnimatedImage
     - libwebp
     - Masonry
-    - MJRefresh
     - SDWebImage
     - SDWebImageFLPlugin
     - SDWebImageWebPCoder
@@ -89,17 +62,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   libwebp: 6bac0a99ba5a6bb7449a951ff22c484201985f68
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
   SDWebImageFLPlugin: 6c2295fb1242d44467c6c87dc5db6b0a13228fd8
   SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  YXBase: 7f10dbd3cc711e5ca22f5aea7993ae84221160bf
-  YXCommon: 657a3cebbc399e8372612cc57625ef147c07677c
 
-PODFILE CHECKSUM: 6a750e16bd49bf8122092087d28644dac4c72a6a
+PODFILE CHECKSUM: 66e31055ded36af940598f8241ea8ee3a865c209
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.11.3

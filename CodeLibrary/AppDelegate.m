@@ -17,18 +17,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"1");
+    [self configLogInfo];
+    DDLogInfo(@"1");
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"2");
+        DDLogInfo(@"2");
     });
     
-    NSLog(@"3");
+    DDLogInfo(@"3");
 
     return YES;
 }
 
-
+- (void)configLogInfo{
+    // 日志
+    [DDOSLogger sharedInstance].logFormatter = [[LJZLogFormatter alloc] init];
+    // 添加DDOSLogger，日志被打印到Xcode控制台
+    [DDLog addLogger:[DDOSLogger sharedInstance]];
+    // 添加DDASLLogger，日志将被打印到Console.app 同时也会在xcode打印
+//    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    
+    //一周内日志
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
+    fileLogger.rollingFrequency = 60 * 60 * 24;//24小时创建一个文件
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;//7个日志文件
+    [fileLogger setLogFormatter:[[LJZLogFormatter alloc] init]];
+    [DDLog addLogger:fileLogger];
+    
+    for (DDAbstractLogger *logger in DDLog.sharedInstance.allLoggers) {
+        if ([logger isKindOfClass:DDFileLogger.class]) {
+            DDLogFileInfo *fileInfo = fileLogger.currentLogFileInfo;
+            DDLogInfo(@"%@",fileInfo.filePath);
+        }
+    }
+    DDLogInfo(@"%@",[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject);
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

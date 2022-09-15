@@ -9,6 +9,17 @@
 #ifndef Define_h
 #define Define_h
 
+#import "LJZTool.h"
+#import "UIView+LJZ.h"
+#import <SDWebImage/UIImage+GIF.h>
+#import "FLAnimatedImageView.h"
+#import "FLAnimatedImage.h"
+#import <Masonry.h>
+#import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
+#import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "LJZLogFormatter.h"
+
 #define WeakObj(o) @autoreleasepool{} __weak typeof(o) o##Weak = o;
 #define StrongObj(o) @autoreleasepool{} __strong typeof(o) o = o##Weak;
 
@@ -28,13 +39,11 @@
 #define kBoldFont(a) [UIFont fontWithName:@"Helvetica-Bold" size:a]
 
 
-#import "LJZTool.h"
-#import "UIView+LJZ.h"
-#import <SDWebImage/UIImage+GIF.h>
-#import "FLAnimatedImageView.h"
-#import "FLAnimatedImage.h"
-#import <Masonry.h>
-#import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
-#import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#endif
+
 
 #endif /* Define_h */

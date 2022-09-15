@@ -1,7 +1,5 @@
 //
 //  LJZPlayerViewController.h
-//  Test
-//
 //  Created by maopao on 2019/3/20.
 //
 
