@@ -24,7 +24,7 @@
         DDLogInfo(@"2");
     });
     
-    DDLogInfo(@"3");
+    DDLogDebug(@"3");
 
     return YES;
 }
@@ -42,16 +42,16 @@
     fileLogger.rollingFrequency = 60 * 60 * 24;//24小时创建一个文件
     fileLogger.logFileManager.maximumNumberOfLogFiles = 7;//7个日志文件
     [fileLogger setLogFormatter:[[LJZLogFormatter alloc] init]];
-    [DDLog addLogger:fileLogger];
-    
-    for (DDAbstractLogger *logger in DDLog.sharedInstance.allLoggers) {
-        if ([logger isKindOfClass:DDFileLogger.class]) {
-            DDLogFileInfo *fileInfo = fileLogger.currentLogFileInfo;
-            DDLogInfo(@"%@",fileInfo.filePath);
-        }
-    }
-    DDLogInfo(@"%@",[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject);
+    [DDLog addLogger:fileLogger withLevel:DDLogLevelInfo];
+    NSSetUncaughtExceptionHandler (&UncaughtExceptionHandler);
 }
+void UncaughtExceptionHandler(NSException *exception) {
+  NSArray *arr = [exception callStackSymbols];//当前调用栈信息
+  NSString *reason = [exception reason];//崩溃的原因
+  NSString *name = [exception name];//异常类型
+  DDLogError(@"exception type : %@ \n crash reason : %@ \n call stack info : %@", name, reason, arr);
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

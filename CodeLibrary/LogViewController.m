@@ -38,6 +38,8 @@
     DDLogInfo(@"Info");
     DDLogWarn(@"Warn");
     DDLogError(@"Error");
+    NSArray *arr = @[@(1)];
+//    NSNumber *num = [arr objectAtIndex:1];
 }
 
 - (void)shareBtnAction{
