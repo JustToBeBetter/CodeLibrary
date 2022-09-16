@@ -37,6 +37,7 @@ PODS:
   - SDWebImageWebPCoder (0.6.1):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.7)
+  - SSZipArchive (2.2.2)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - SDWebImage
   - SDWebImageFLPlugin
   - SDWebImageWebPCoder
+  - SSZipArchive
   - SVProgressHUD
 
 SPEC REPOS:
@@ -58,6 +60,7 @@ SPEC REPOS:
     - SDWebImage
     - SDWebImageFLPlugin
     - SDWebImageWebPCoder
+    - SSZipArchive
     - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -69,8 +72,9 @@ SPEC CHECKSUMS:
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
   SDWebImageFLPlugin: 6c2295fb1242d44467c6c87dc5db6b0a13228fd8
   SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 66e31055ded36af940598f8241ea8ee3a865c209
+PODFILE CHECKSUM: 50740dfa79f4b7f6555f13979dd7266dec83f2f5
 
 COCOAPODS: 1.11.3

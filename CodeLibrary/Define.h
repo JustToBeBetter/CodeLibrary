@@ -19,6 +19,7 @@
 #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import "LJZLogFormatter.h"
+#import <SSZipArchive/SSZipArchive.h>>
 
 #define WeakObj(o) @autoreleasepool{} __weak typeof(o) o##Weak = o;
 #define StrongObj(o) @autoreleasepool{} __strong typeof(o) o = o##Weak;

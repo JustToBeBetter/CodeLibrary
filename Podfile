@@ -11,4 +11,6 @@ pod 'SDWebImageWebPCoder'
 #gif
 pod 'SDWebImageFLPlugin'
 pod 'CocoaLumberjack'
+pod 'SSZipArchive'
+
 end
