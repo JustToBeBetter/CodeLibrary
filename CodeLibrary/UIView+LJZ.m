@@ -197,4 +197,125 @@
     
     self.backgroundColor = [UIColor colorWithPatternImage:bgImage];
 }
+
+- (void)setRoundedCorners:(UIRectCorner)corners radius:(CGSize)size {
+    UIBezierPath* maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:size];
+    
+    CAShapeLayer* maskLayer = [CAShapeLayer new];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    
+    self.layer.mask = maskLayer;
+}
+
+- (void)setCornerRadius:(CGFloat)radius {
+    [self setRoundedCorners:UIRectCornerTopLeft|UIRectCornerTopRight|UIRectCornerBottomLeft|UIRectCornerBottomRight radius:CGSizeMake(radius, radius)];
+}
+
+- (void)setBorderColor:(UIColor *)color borderWidth:(CGFloat)borderWidth {
+    CAShapeLayer *borderLayer = [CAShapeLayer layer];
+    borderLayer.frame = self.bounds;
+    borderLayer.lineWidth = borderWidth;
+    borderLayer.strokeColor = color.CGColor;
+    borderLayer.fillColor = [UIColor clearColor].CGColor;
+    //    [self.layer insertSublayer:borderLayer atIndex:0];
+    [self.layer addSublayer:borderLayer];
+}
+
+
+/**
+ 给view添加透明度渐变颜色
+ 透明度自0到1
+ @param color 颜色
+ @param topToDown 是否是自上而下渐变
+ */
+- (CAGradientLayer *)gradientLayerWithColor:(UIColor *)color maxAlpha:(CGFloat)alpha topToDown:(BOOL)topToDown {
+    UIColor *colorOne = [color colorWithAlphaComponent:0];
+    UIColor *colorTwo = [color colorWithAlphaComponent:alpha];
+    NSArray *colors = [NSArray arrayWithObjects:(id)colorOne.CGColor, colorTwo.CGColor, nil];
+    CGPoint pointTop = CGPointMake(0, 0);
+    CGPoint pointBelow = CGPointMake(0, 1);
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    //设置开始和结束位置(设置渐变的方向)
+    gradient.startPoint = pointTop;
+    gradient.endPoint = pointBelow;
+    if (topToDown) {
+        gradient.startPoint = pointBelow;
+        gradient.endPoint = pointTop;
+    }
+    gradient.colors = colors;
+    gradient.frame = self.bounds;
+    [self.layer addSublayer:gradient];
+    return gradient;
+}
+- (void)makeCornerRadiusWithBezierPath:(CGFloat)cornerRadius{
+    UIBezierPath *maskPath;
+    maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                          cornerRadius:cornerRadius];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+//Top的圆角
+- (void)topCornerRadius:(CGFloat)radius {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+//Bottom的圆角
+- (void)bottomCornerRadius:(CGFloat)radius {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerBottomLeft | UIRectCornerBottomRight cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+//left的圆角
+- (void)leftCornerRadius:(CGFloat)radius {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerBottomLeft cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+//right的圆角
+- (void)rightCornerRadius:(CGFloat)radius {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopRight | UIRectCornerBottomRight cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+//rightBottom的圆角
+-(void)rightBottomCornerRadius:(CGFloat)radius{
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners: UIRectCornerBottomRight cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+-(void)cornerTopLeft:(CGFloat)topLeft topRight:(CGFloat)topRight bottomLeft:(CGFloat)bottomLeft bottomRight:(CGFloat)bottomRight {
+    
+   UIBezierPath *path1 = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, self.width / 2, self.height / 2) byRoundingCorners:UIRectCornerTopLeft cornerRadii:CGSizeMake(topLeft, topLeft)];
+    UIBezierPath *path2 = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(self.width / 2, 0, self.width / 2, self.height / 2) byRoundingCorners:UIRectCornerTopRight cornerRadii:CGSizeMake(topRight, topRight)];
+    UIBezierPath *path3 = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, self.height / 2, self.width / 2, self.height / 2) byRoundingCorners:UIRectCornerBottomLeft cornerRadii:CGSizeMake(bottomLeft, bottomLeft)];
+    UIBezierPath *path4 = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(self.width / 2 - 10, self.height / 2 - 10, self.width / 2 + 10, self.height / 2 + 10) byRoundingCorners:UIRectCornerBottomRight cornerRadii:CGSizeMake(bottomRight, bottomRight)];
+
+    [path1 appendPath:path2];
+    [path1 appendPath:path3];
+    [path1 appendPath:path4];
+
+    CAShapeLayer *shape = [[CAShapeLayer alloc] init];
+    shape.path = path1.CGPath;
+    self.layer.mask = shape;
+
+}
+
 @end

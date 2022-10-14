@@ -37,6 +37,7 @@
 		A97D75E224C6BB170093EC9E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D75E024C6BB170093EC9E /* UIImage+ImageEffects.m */; };
 		A97D75E424C6BBC50093EC9E /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A97D75E324C6BBC50093EC9E /* test.jpeg */; };
 		A98EE9482668A6350085DB1A /* LJZDeveiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */; };
+		A999C3B828F40019008E2F83 /* MMAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A999C3B628F40019008E2F83 /* MMAvatarView.m */; };
 		A9A8DFEE21BB9B8A00AF13EB /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */; };
 		A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFF321BB9C2900AF13EB /* LJZShakeManager.m */; };
 		A9B0D99F1E9DF9970024361F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B0D99E1E9DF9970024361F /* main.m */; };
@@ -188,6 +189,8 @@
 		A97D75E324C6BBC50093EC9E /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
 		A98EE9462668A6350085DB1A /* LJZDeveiceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZDeveiceInfo.h; sourceTree = "<group>"; };
 		A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZDeveiceInfo.m; sourceTree = "<group>"; };
+		A999C3B628F40019008E2F83 /* MMAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvatarView.m; sourceTree = "<group>"; };
+		A999C3B728F40019008E2F83 /* MMAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAvatarView.h; sourceTree = "<group>"; };
 		A9A8DFEC21BB9B8A00AF13EB /* ShakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		A9A8DFF221BB9C2900AF13EB /* LJZShakeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZShakeManager.h; sourceTree = "<group>"; };
@@ -546,6 +549,8 @@
 				A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */,
 				A9CFA80C28D2CF2900DE8AD8 /* LJZLogFormatter.h */,
 				A9CFA80D28D2CF2900DE8AD8 /* LJZLogFormatter.m */,
+				A999C3B728F40019008E2F83 /* MMAvatarView.h */,
+				A999C3B628F40019008E2F83 /* MMAvatarView.m */,
 				A9F92A941F726F570084F623 /* Generators */,
 			);
 			name = Utility;
@@ -1008,6 +1013,7 @@
 				A98EE9482668A6350085DB1A /* LJZDeveiceInfo.m in Sources */,
 				A9B0D9DE1E9E2A170024361F /* LJZBarrageView.m in Sources */,
 				A2285655205F955400B6B2F5 /* FloatingViewViewController.m in Sources */,
+				A999C3B828F40019008E2F83 /* MMAvatarView.m in Sources */,
 				A9A8DFF421BB9C2900AF13EB /* LJZShakeManager.m in Sources */,
 				A9CFA81228D2CFC100DE8AD8 /* LogViewController.m in Sources */,
 				AF170AD62248D44D00353B43 /* LJZAVPlayer.m in Sources */,

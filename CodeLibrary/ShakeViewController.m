@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [LJZShakeManager sharedInstance];
-    [self performSelector:@selector(beginShake) withObject:nil afterDelay:600];
+    [self performSelector:@selector(beginShake) withObject:nil afterDelay:30];
 }
 - (void)beginShake{
     [[LJZShakeManager sharedInstance]beginShake];
