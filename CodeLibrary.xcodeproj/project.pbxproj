@@ -46,6 +46,7 @@
 		A986DA7C2912521D00DA4C83 /* AudioConvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A986DA7B2912521D00DA4C83 /* AudioConvertViewController.m */; };
 		A986DA7E2912559D00DA4C83 /* input.wav in Resources */ = {isa = PBXBuildFile; fileRef = A986DA7D2912559D00DA4C83 /* input.wav */; };
 		A986DA812912583000DA4C83 /* MMPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A986DA802912583000DA4C83 /* MMPlayerManager.m */; };
+		A986DA8429125A4600DA4C83 /* AACEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A986DA8329125A4600DA4C83 /* AACEncoder.m */; };
 		A98EE9482668A6350085DB1A /* LJZDeveiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */; };
 		A999C3B828F40019008E2F83 /* MMAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A999C3B628F40019008E2F83 /* MMAvatarView.m */; };
 		A9A8DFEE21BB9B8A00AF13EB /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8DFED21BB9B8A00AF13EB /* ShakeViewController.m */; };
@@ -211,6 +212,8 @@
 		A986DA7D2912559D00DA4C83 /* input.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = input.wav; sourceTree = "<group>"; };
 		A986DA7F2912583000DA4C83 /* MMPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPlayerManager.h; sourceTree = "<group>"; };
 		A986DA802912583000DA4C83 /* MMPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPlayerManager.m; sourceTree = "<group>"; };
+		A986DA8229125A4600DA4C83 /* AACEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACEncoder.h; sourceTree = "<group>"; };
+		A986DA8329125A4600DA4C83 /* AACEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AACEncoder.m; sourceTree = "<group>"; };
 		A98EE9462668A6350085DB1A /* LJZDeveiceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZDeveiceInfo.h; sourceTree = "<group>"; };
 		A98EE9472668A6350085DB1A /* LJZDeveiceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZDeveiceInfo.m; sourceTree = "<group>"; };
 		A999C3B628F40019008E2F83 /* MMAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAvatarView.m; sourceTree = "<group>"; };
@@ -477,6 +480,8 @@
 				A986DA6F291251C400DA4C83 /* Resource */,
 				A986DA6A2912518200DA4C83 /* lame.h */,
 				A986DA6B2912518200DA4C83 /* libmp3lame.a */,
+				A986DA8229125A4600DA4C83 /* AACEncoder.h */,
+				A986DA8329125A4600DA4C83 /* AACEncoder.m */,
 				A986DA7F2912583000DA4C83 /* MMPlayerManager.h */,
 				A986DA802912583000DA4C83 /* MMPlayerManager.m */,
 				A986DA672912516D00DA4C83 /* ExtAudioConverter.h */,
@@ -1101,6 +1106,7 @@
 				A9B0D9A21E9DF9970024361F /* AppDelegate.m in Sources */,
 				A2285660205F985C00B6B2F5 /* LJZPaomaView.m in Sources */,
 				A905AB6E1F4E84CE00325F01 /* PagesViewController.m in Sources */,
+				A986DA8429125A4600DA4C83 /* AACEncoder.m in Sources */,
 				AF170AE32248D4C600353B43 /* LJZPlayerViewController.m in Sources */,
 				A986DA692912516D00DA4C83 /* ExtAudioConverter.m in Sources */,
 				A905AB751F4E966900325F01 /* LJZFirstViewController.m in Sources */,
