@@ -450,6 +450,24 @@ static NSInteger is35InchScreen = -1;
 
     if([platform isEqualToString:@"iPhone13,4"]) return@"iPhone 12 Pro Max";
     
+    if([platform isEqualToString:@"iPhone14,4"]) return@"iPhone 13 mini";
+
+    if([platform isEqualToString:@"iPhone14,5"]) return@"iPhone 13";
+     
+    if([platform isEqualToString:@"iPhone14,2"]) return@"iPhone 13 Pro";
+
+    if([platform isEqualToString:@"iPhone14,3"]) return@"iPhone 13 Pro Max";
+    
+    if([platform isEqualToString:@"iPhone14,6"]) return@"iPhone SE 3";
+
+    if([platform isEqualToString:@"iPhone14,7"]) return@"iPhone 14";
+
+    if([platform isEqualToString:@"iPhone14,8"]) return@"iPhone 14 Plus";
+
+    if([platform isEqualToString:@"iPhone15,2"]) return@"iPhone 14 Pro";
+
+    if([platform isEqualToString:@"iPhone15,3"]) return@"iPhone 14 Pro Max";
+    
     if([platform isEqualToString:@"iPod1,1"])  return@"iPod Touch 1G";
     
     if([platform isEqualToString:@"iPod2,1"])  return@"iPod Touch 2G";

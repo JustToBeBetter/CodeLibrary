@@ -33,11 +33,11 @@
         [feedBackGenertor impactOccurred];
      }
     
-    NSLog(@"\n device:%@\n safeTop:%f \n safeBtm:%f \n statusBarH:%f",LJZDeveiceInfo.phoneType,LJZDeveiceInfo.safe_top,LJZDeveiceInfo.safe_bottom,LJZDeveiceInfo.statusBarHeight);
+    NSLog(@"\n device:%@\n safeTop:%f \n safeBtm:%f \n statusBarH:%f\n navBarHeight:%f",LJZDeveiceInfo.phoneType,LJZDeveiceInfo.safe_top,LJZDeveiceInfo.safe_bottom,LJZDeveiceInfo.statusBarHeight,LJZDeveiceInfo.navBarHeight);
     
 }
 - (void)initData{
-    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer",@"BlurEffect",@"GifWebPImg",@"Log"];
+    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer",@"BlurEffect",@"GifWebPImg",@"Log",@"AudioConvert"];
 }
 - (UITableView *)table{
     
