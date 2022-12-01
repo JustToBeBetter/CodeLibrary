@@ -76,6 +76,8 @@
 		A9CA777421BBA0A500C63889 /* voice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A9CA777321BBA0A500C63889 /* voice.m4a */; };
 		A9CFA80E28D2CF2900DE8AD8 /* LJZLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFA80D28D2CF2900DE8AD8 /* LJZLogFormatter.m */; };
 		A9CFA81228D2CFC100DE8AD8 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFA81128D2CFC100DE8AD8 /* LogViewController.m */; };
+		A9DC2CDD2938497E003EA7BC /* AppGrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DC2CDC2938497E003EA7BC /* AppGrayViewController.m */; };
+		A9DC2CE029384E51003EA7BC /* UIImageView+Gray.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DC2CDF29384E51003EA7BC /* UIImageView+Gray.m */; };
 		A9F92A931F726F250084F623 /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A921F726F250084F623 /* Categories */; };
 		A9F92A951F726F570084F623 /* Generators in Resources */ = {isa = PBXBuildFile; fileRef = A9F92A941F726F570084F623 /* Generators */; };
 		AC588C31B7636BDB55504965 /* libPods-CodeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E7A80F8F9C0BDAD8A78FFC /* libPods-CodeLibrary.a */; };
@@ -266,6 +268,10 @@
 		A9CFA80D28D2CF2900DE8AD8 /* LJZLogFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZLogFormatter.m; sourceTree = "<group>"; };
 		A9CFA81028D2CFC100DE8AD8 /* LogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
 		A9CFA81128D2CFC100DE8AD8 /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		A9DC2CDB2938497E003EA7BC /* AppGrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppGrayViewController.h; sourceTree = "<group>"; };
+		A9DC2CDC2938497E003EA7BC /* AppGrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppGrayViewController.m; sourceTree = "<group>"; };
+		A9DC2CDE29384E51003EA7BC /* UIImageView+Gray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Gray.h"; sourceTree = "<group>"; };
+		A9DC2CDF29384E51003EA7BC /* UIImageView+Gray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Gray.m"; sourceTree = "<group>"; };
 		A9F92A921F726F250084F623 /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
 		A9F92A941F726F570084F623 /* Generators */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generators; sourceTree = "<group>"; };
 		AF170AB72248D44D00353B43 /* LJZSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZSlider.m; sourceTree = "<group>"; };
@@ -618,6 +624,7 @@
 		A9B0D9D61E9DFFF30024361F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A9DC2CDA2938494D003EA7BC /* APPGrayModel */,
 				A986DA662912515500DA4C83 /* AudioConvert */,
 				A9CFA80F28D2CF7D00DE8AD8 /* log */,
 				A9B6C49A25E61F9700901FB4 /* gifwebpImg */,
@@ -702,6 +709,17 @@
 				A9CFA81128D2CFC100DE8AD8 /* LogViewController.m */,
 			);
 			name = log;
+			sourceTree = "<group>";
+		};
+		A9DC2CDA2938494D003EA7BC /* APPGrayModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9DC2CDE29384E51003EA7BC /* UIImageView+Gray.h */,
+				A9DC2CDF29384E51003EA7BC /* UIImageView+Gray.m */,
+				A9DC2CDB2938497E003EA7BC /* AppGrayViewController.h */,
+				A9DC2CDC2938497E003EA7BC /* AppGrayViewController.m */,
+			);
+			path = APPGrayModel;
 			sourceTree = "<group>";
 		};
 		AF170AB62248D44D00353B43 /* Player */ = {
@@ -1101,6 +1119,7 @@
 				A9B6C49D25E61FE600901FB4 /* GifWebPImgViewController.m in Sources */,
 				AF170AD32248D44D00353B43 /* LJZPlayerToolsView.m in Sources */,
 				A9CFA80E28D2CF2900DE8AD8 /* LJZLogFormatter.m in Sources */,
+				A9DC2CE029384E51003EA7BC /* UIImageView+Gray.m in Sources */,
 				A9B358521EA8D87E004618BB /* FireLikeViewController.m in Sources */,
 				A9B3585A1EA8D95F004618BB /* UIView+LJZ.m in Sources */,
 				A9B0D9A21E9DF9970024361F /* AppDelegate.m in Sources */,
@@ -1111,6 +1130,7 @@
 				A986DA692912516D00DA4C83 /* ExtAudioConverter.m in Sources */,
 				A905AB751F4E966900325F01 /* LJZFirstViewController.m in Sources */,
 				A9B0D99F1E9DF9970024361F /* main.m in Sources */,
+				A9DC2CDD2938497E003EA7BC /* AppGrayViewController.m in Sources */,
 				AF282EFD2240EBD5006B3B76 /* LJZMotionManager.m in Sources */,
 				A225D68120B7FD8100654D27 /* NetworkSpeedViewController.m in Sources */,
 				A228564A205F611100B6B2F5 /* GifMakerViewController.m in Sources */,

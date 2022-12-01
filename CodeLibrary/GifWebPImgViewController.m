@@ -7,7 +7,7 @@
 //
 
 #import "GifWebPImgViewController.h"
-#import "MMAvatarView.h""
+#import "MMAvatarView.h"
 
 @interface GifWebPImgViewController ()
 

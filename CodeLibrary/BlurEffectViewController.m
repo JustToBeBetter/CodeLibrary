@@ -30,7 +30,7 @@
     self.title = @"方法一";
     [self.photoImageView setImage:[UIImage imageNamed:@"test.jpeg"]];
     //毛玻璃效果（高斯模糊）
-    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
     UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     visualEffectView.frame = self.photoImageView.bounds;
     [self.photoImageView addSubview:visualEffectView];
