@@ -111,7 +111,7 @@
 }
 
 - (void)showGrayViewInSuperView:(UIView *)superView{
-    if (@available(iOS 12.0, *)) {//只支持12及以上
+    if (@available(iOS 13.0, *)) {//只支持13及以上
         UIView *overlay = [[UIView alloc] initWithFrame:superView.bounds];
         overlay.userInteractionEnabled = NO;
         overlay.translatesAutoresizingMaskIntoConstraints = false;

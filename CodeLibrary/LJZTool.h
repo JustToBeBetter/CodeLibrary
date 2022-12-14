@@ -44,4 +44,11 @@
 //json字符串转json对象
 + (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
 
+/** 获取ip*/
++ (NSString *)getIPAddress:(BOOL)preferIPv4;
+
++ (BOOL)isValidatIP:(NSString *)ipAddress;
+
++ (NSDictionary *)getIPAddresses;
+
 @end

@@ -37,7 +37,7 @@
     
 }
 - (void)initData{
-    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer",@"BlurEffect",@"GifWebPImg",@"Log",@"AudioConvert",@"AppGray"];
+    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer",@"BlurEffect",@"GifWebPImg",@"Log",@"AudioConvert",@"AppGray",@"UploadToPhone"];
 }
 - (UITableView *)table{
     
