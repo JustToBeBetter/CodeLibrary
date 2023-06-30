@@ -1,0 +1,45 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "zhentan1qinv.moc3",
+		"Textures": [
+			"zhentan1qinv.2048/zhentan1qinv_texture_00.png"
+		],
+		"Physics": "zhentan1qinv.physics3.json",
+		"DisplayInfo": "zhentan1qinv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "zhentan1qinv.BQ1.exp3.json",
+				"File": "zhentan1qinv.BQ1.exp3.json"
+			},
+			{
+				"Name": "zhentan1qinv.BQ2.exp3.json",
+				"File": "zhentan1qinv.BQ2.exp3.json"
+			},
+			{
+				"Name": "zhentan1qinv.BQ3.exp3.json",
+				"File": "zhentan1qinv.BQ3.exp3.json"
+			},
+			{
+				"Name": "zhentan1qinv.BQ4.exp3.json",
+				"File": "zhentan1qinv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	],
+	"HitAreas": []
+}

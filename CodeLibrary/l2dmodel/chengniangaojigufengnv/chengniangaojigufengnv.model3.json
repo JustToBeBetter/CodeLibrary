@@ -1,0 +1,45 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "chengniangaojigufengnv.moc3",
+		"Textures": [
+			"chengniangaojigufengnv.2048/chengniangaojigufengnv_texture_00.png"
+		],
+		"Physics": "chengniangaojigufengnv.physics3.json",
+		"DisplayInfo": "chengniangaojigufengnv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "chengniangaojigufengnv.BQ1.exp3.json",
+				"File": "chengniangaojigufengnv.BQ1.exp3.json"
+			},
+			{
+				"Name": "chengniangaojigufengnv.BQ2.exp3.json",
+				"File": "chengniangaojigufengnv.BQ2.exp3.json"
+			},
+			{
+				"Name": "chengniangaojigufengnv.BQ3.exp3.json",
+				"File": "chengniangaojigufengnv.BQ3.exp3.json"
+			},
+			{
+				"Name": "chengniangaojigufengnv.BQ4.exp3.json",
+				"File": "chengniangaojigufengnv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

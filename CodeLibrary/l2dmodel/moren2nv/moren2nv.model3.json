@@ -1,0 +1,37 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "moren2nv.moc3",
+		"Textures": [
+			"moren2nv.2048/moren2nv_texture_00.png"
+		],
+		"Physics": "moren2nv.physics3.json",
+		"DisplayInfo": "moren2nv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "moren2nv.BQ1.exp3.json",
+				"File": "moren2nv.BQ1.exp3.json"
+			},
+			{
+				"Name": "moren2nv.BQ2.exp3.json",
+				"File": "moren2nv.BQ2.exp3.json"
+			},
+			{
+				"Name": "moren2nv.BQ3.exp3.json",
+				"File": "moren2nv.BQ3.exp3.json"
+			},
+			{
+				"Name": "moren2nv.BQ4.exp3.json",
+				"File": "moren2nv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

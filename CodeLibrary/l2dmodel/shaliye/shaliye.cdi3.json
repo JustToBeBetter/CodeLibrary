@@ -1,0 +1,170 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "ParamGroup2",
+			"Name": "嘴部　变形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "ParamGroup2",
+			"Name": "嘴巴　张开和闭合"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroup2",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroup2",
+			"Name": "左眉   上下"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "ParamGroup2",
+			"Name": "眼球 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "ParamGroup2",
+			"Name": "眼球 Y"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup2",
+			"Name": "眼球状态  左"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup2",
+			"Name": "眼球状态  右"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼　微笑"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼   开合"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼　微笑"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼　开闭"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动　前发"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动　后发"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "裙子"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "方向"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "脸"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "ﾊﾖ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "ｻｨ"
+		},
+		{
+			"Id": "Part3",
+			"Name": "ﾍｷ"
+		},
+		{
+			"Id": "Part11",
+			"Name": "ﾊﾖ"
+		},
+		{
+			"Id": "Part12",
+			"Name": "ﾁ�ﾗﾓ"
+		},
+		{
+			"Id": "Part13",
+			"Name": "ｰﾗｽ�"
+		},
+		{
+			"Id": "Part14",
+			"Name": "ﾍﾈ"
+		},
+		{
+			"Id": "Part4",
+			"Name": "头发"
+		},
+		{
+			"Id": "Part5",
+			"Name": "鬓角"
+		},
+		{
+			"Id": "Part6",
+			"Name": "五官"
+		},
+		{
+			"Id": "Part10",
+			"Name": "ﾁｳ"
+		},
+		{
+			"Id": "Part7",
+			"Name": "嘴"
+		},
+		{
+			"Id": "Part8",
+			"Name": "左眼"
+		},
+		{
+			"Id": "Part9",
+			"Name": "右眼"
+		}
+	]
+}

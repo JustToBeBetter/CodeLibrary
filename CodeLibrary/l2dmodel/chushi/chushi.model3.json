@@ -1,0 +1,48 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "chushi.moc3",
+		"Textures": [
+			"chushi.2048/chushi_texture_00.png"
+		],
+		"Physics": "chushi.physics3.json",
+		"DisplayInfo": "chushi.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "chushi.BQ1.exp3.json",
+				"File": "chushi.BQ1.exp3.json"
+			},
+			{
+				"Name": "chushi.BQ2.exp3.json",
+				"File": "chushi.BQ2.exp3.json"
+			},
+			{
+				"Name": "chushi.BQ3.exp3.json",
+				"File": "chushi.BQ3.exp3.json"
+			},
+			{
+				"Name": "chushi.BQ4.exp3.json",
+				"File": "chushi.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthForm",
+				"ParamMouthOpenY"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	],
+	"HitAreas": []
+}

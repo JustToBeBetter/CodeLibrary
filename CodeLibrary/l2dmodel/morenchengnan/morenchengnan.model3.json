@@ -1,0 +1,37 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "morenchengnan.moc3",
+		"Textures": [
+			"morenchengnan.2048/morenchengnan_texture_00.png"
+		],
+		"Physics": "morenchengnan.physics3.json",
+		"DisplayInfo": "morenchengnan.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "morenchengnan.BQ1.exp3.json",
+				"File": "morenchengnan.BQ1.exp3.json"
+			},
+			{
+				"Name": "morenchengnan.BQ2.exp3.json",
+				"File": "morenchengnan.BQ2.exp3.json"
+			},
+			{
+				"Name": "morenchengnan.BQ3.exp3.json",
+				"File": "morenchengnan.BQ3.exp3.json"
+			},
+			{
+				"Name": "morenchengnan.BQ4.exp3.json",
+				"File": "morenchengnan.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

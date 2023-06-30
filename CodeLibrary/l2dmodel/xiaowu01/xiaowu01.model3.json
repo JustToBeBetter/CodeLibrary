@@ -1,0 +1,29 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "xiaowu01.moc3",
+		"Textures": [
+			"xiaowu01.2048/xiaowu01_texture_00.png"
+		],
+		"Physics": "xiaowu01.physics3.json",
+		"DisplayInfo": "xiaowu01.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"Param",
+				"Param2"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthForm",
+				"ParamMouthOpenY"
+			]
+		}
+	]
+}

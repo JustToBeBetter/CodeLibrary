@@ -1,0 +1,217 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "眼镜"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "眼球 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "眼球 Y"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "眼球状态 R"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "",
+			"Name": "眼球状态 L"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左眼　开闭"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "左眼　微笑"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右眼   开闭"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "右眼　微笑"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动　呆毛"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "左眉   上下"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "嘴部　变形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "嘴巴　张开和闭合"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动　前发"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "衣服"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "",
+			"Name": "摇动 头发"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "ﾑﾛｾｵ ｸｱｱｾ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "ﾇｰｷ｢"
+		},
+		{
+			"Id": "Part8",
+			"Name": "ﾍｷｷ｢ ｸｱｱｾ"
+		},
+		{
+			"Id": "Part9",
+			"Name": "ﾎ蟷ﾙ"
+		},
+		{
+			"Id": "Part14",
+			"Name": "ﾍｷ"
+		},
+		{
+			"Id": "Part17",
+			"Name": "ﾁ�ｴ�"
+		},
+		{
+			"Id": "Part18",
+			"Name": "ﾗ�ﾒﾂ"
+		},
+		{
+			"Id": "Part19",
+			"Name": "ﾓﾒﾒﾂ"
+		},
+		{
+			"Id": "Part20",
+			"Name": "ﾉ�ﾌ�"
+		},
+		{
+			"Id": "Part21",
+			"Name": "ﾊﾖｱﾛ ﾗ�"
+		},
+		{
+			"Id": "Part22",
+			"Name": "ﾐ｡ﾊﾖｱﾛ ﾓﾒ"
+		},
+		{
+			"Id": "Part23",
+			"Name": "ﾊﾖｱﾛ ﾓﾒ"
+		},
+		{
+			"Id": "Part24",
+			"Name": "ﾍﾈﾗ�"
+		},
+		{
+			"Id": "Part25",
+			"Name": "ﾍﾈﾓﾒ"
+		},
+		{
+			"Id": "Part26",
+			"Name": "ﾍｷｷ｢ｺ�"
+		},
+		{
+			"Id": "Part3",
+			"Name": "ﾗ�ｷ｢"
+		},
+		{
+			"Id": "Part4",
+			"Name": "ﾁ�ｺ｣"
+		},
+		{
+			"Id": "Part5",
+			"Name": "ﾗ�ﾇｰ"
+		},
+		{
+			"Id": "Part6",
+			"Name": "ﾓﾒﾇｰ"
+		},
+		{
+			"Id": "Part7",
+			"Name": "ﾓﾒｷ｢"
+		},
+		{
+			"Id": "Part10",
+			"Name": "ﾓﾒﾑﾛ"
+		},
+		{
+			"Id": "Part11",
+			"Name": "ﾗ�ﾑﾛ"
+		},
+		{
+			"Id": "Part12",
+			"Name": "ﾗ� 1"
+		},
+		{
+			"Id": "Part13",
+			"Name": "ｴ�ﾃｫ"
+		},
+		{
+			"Id": "Part15",
+			"Name": "ﾗ�ｶ�"
+		},
+		{
+			"Id": "Part16",
+			"Name": "ﾓﾒｶ�"
+		}
+	]
+}

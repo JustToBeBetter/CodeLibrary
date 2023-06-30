@@ -1,0 +1,6 @@
+module Pods_CodeLibrary {
+  umbrella header "Pods-CodeLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

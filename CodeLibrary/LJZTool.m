@@ -12,12 +12,16 @@
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 #import <net/if.h>
+#import <CommonCrypto/CommonDigest.h>
+#import <SSZipArchive/SSZipArchive.h>
 
 #define IOS_CELLULAR    @"pdp_ip0"
 #define IOS_WIFI        @"en0"
 #define IOS_VPN         @"utun0"
 #define IP_ADDR_IPv4    @"ipv4"
 #define IP_ADDR_IPv6    @"ipv6"
+
+static NSMutableArray  *_downLoadArray;
 
 @implementation LJZTool
 //动态 计算行高
@@ -379,4 +383,160 @@
     return [addresses count] ? addresses : nil;
 }
 
++ (void)downLoadL2dModelWithUrl:(NSString *)url complete:(nullable void (^)(BOOL))complete{
+    NSString *zipPath = [[NSFileManager pathForLive2dZip] stringByAppendingFormat:@"/%@.zip",[self md5String:url]];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:zipPath] || ![url containsString:@"http"]){
+        return;
+    }
+    if (!_downLoadArray) {
+        _downLoadArray = [[NSMutableArray alloc]init];
+    }
+    if ([_downLoadArray containsObject:zipPath]) {
+        return;
+    }
+    [_downLoadArray addObject:zipPath];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:zipPath]) {
+        WeakObj(self)
+        
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+        NSURLSessionDownloadTask *downTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+            CGFloat progress = 1.0 * downloadProgress.completedUnitCount/downloadProgress.totalUnitCount;
+            NSLog(@"模型资源下载进度 %f",progress);
+        } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+            NSLog(@"savePath==%@",zipPath);
+            return [NSURL fileURLWithPath:zipPath];
+            
+        } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+            if (!error) {
+                NSString *modelPath = [[NSFileManager pathForLive2dModel] stringByAppendingFormat:@"/%@", [selfWeak getl2dNameWithZipUrl:url]];
+                if ([[NSFileManager defaultManager] fileExistsAtPath:modelPath]){
+                    [[NSFileManager defaultManager]removeItemAtPath:modelPath error:nil];
+                }
+                [selfWeak unZipL2dFileAtpath:zipPath complete:complete];
+            }else{
+                NSLog(@"模型资源下载失败：%@",error);
+                !complete ? : complete(NO);
+            }
+        }];
+        
+        [downTask resume];
+        
+    }
+}
++ (NSString *)getl2dNameWithZipUrl:(NSString *)zipUrl{
+    NSArray *items = [zipUrl componentsSeparatedByString:@"/"];
+    NSArray *lastItems = [items.lastObject componentsSeparatedByString:@"."];
+    return lastItems.firstObject;
+}
++ (NSString *)md5String:(NSString *)str
+{
+    const char *ptr = [str UTF8String];
+    unsigned char md5Buffer[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(ptr, (CC_LONG)strlen(ptr), md5Buffer);
+    NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [output appendFormat:@"%02x", md5Buffer[i]];
+    }
+    
+    return [output copy];
+}
++ (void)unZipL2dFileAtpath:(NSString *)filePath complete:(nullable void (^)(BOOL))complete{
+    [_downLoadArray removeObject:filePath];
+    NSString *desPath =[NSFileManager pathForLive2dModel];
+
+    BOOL sucess = [SSZipArchive unzipFileAtPath:filePath toDestination:desPath progressHandler:^(NSString * _Nonnull entry, unz_file_info zipInfo, long entryNumber, long total) {
+       
+    } completionHandler:^(NSString * _Nonnull path, BOOL succeeded, NSError * _Nullable error) {
+      
+    }];
+    !complete ? : complete(sucess);
+    NSLog(@"模型资源解压%@",sucess?@"成功":@"失败");
+}
++ (NSString *)getLipTypeWithString:(NSString *)word{
+    NSString *pinyin = [NSString pinyinFromChineseString:word];
+    NSLog(@"word==1=%@=%@=%@",word,pinyin,word.pinYin);
+    //B口型 发音时双唇由闭合到打开，嘴型向外撅
+    if ([pinyin hasPrefix:@"b"] ||
+        [pinyin hasPrefix:@"m"] ||
+        [pinyin hasPrefix:@"p"]) {
+        return @"B";
+    }
+    //F口型 发音时双唇由闭合到打开，咬唇
+    if ([pinyin hasPrefix:@"f"]) {
+        return @"F";
+    }
+    
+    //D口型 发音时嘴唇微微张开
+    if ([pinyin hasPrefix:@"d"] ||
+        [pinyin hasPrefix:@"t"] ||
+        [pinyin hasPrefix:@"n"] ||
+        [pinyin hasPrefix:@"l"] ||
+        [pinyin hasPrefix:@"g"] ||
+        [pinyin hasPrefix:@"k"] ||
+        [pinyin hasPrefix:@"h"] ||
+        [pinyin hasPrefix:@"j"] ||
+        [pinyin hasPrefix:@"q"] ||
+        [pinyin hasPrefix:@"x"] ||
+        [pinyin hasPrefix:@"zh"] ||
+        [pinyin hasPrefix:@"chi"] ||
+        [pinyin hasPrefix:@"sh"] ||
+        [pinyin hasPrefix:@"r"] ||
+        [pinyin hasPrefix:@"z"] ||
+        [pinyin hasPrefix:@"s"]) {
+        return @"D";
+    }
+    
+    //A口型 发音时嘴唇张开幅度较大，嘴型呈非圆形
+    if ([pinyin containsString:@"a"] ||
+        [pinyin containsString:@"ai"] ||
+        [pinyin containsString:@"an"] ||
+        [pinyin containsString:@"ang"] ||
+        [pinyin containsString:@"ao"] ||
+        [pinyin containsString:@"ia"] ||
+        [pinyin containsString:@"ian"] ||
+        [pinyin containsString:@"iao"] ||
+        [pinyin containsString:@"ua"] ||
+        [pinyin containsString:@"uai"] ||
+        [pinyin containsString:@"uan"] ||
+        [pinyin containsString:@"uang"]) {
+        return @"A";
+    }
+    //O口型 发音时嘴唇张开幅度较大，嘴型呈圆形
+    if ([pinyin containsString:@"o"] ||
+        [pinyin containsString:@"ou"] ||
+        [pinyin containsString:@"ong"] ||
+        [pinyin containsString:@"uo"] ||
+        [pinyin containsString:@"iong"]) {
+        return @"O";
+    }
+    
+    //E口型 发音时嘴唇张开幅度较小，嘴型非圆形并向两侧伸展
+    if ([pinyin containsString:@"e"] ||
+        [pinyin containsString:@"i"] ||
+        [pinyin containsString:@"ie"] ||
+        [pinyin containsString:@"er"] ||
+        [pinyin containsString:@"ei"] ||
+        [pinyin containsString:@"uei"] ||
+        [pinyin containsString:@"en"] ||
+        [pinyin containsString:@"in"] ||
+        [pinyin containsString:@"uen"] ||
+        [pinyin containsString:@"eng"] ||
+        [pinyin containsString:@"ing"] ||
+        [pinyin containsString:@"ueng"] ||
+        [pinyin containsString:@"y"]) {
+        return @"E";
+    }
+    
+    //U口型 发音时嘴唇张开幅度较小，嘴型非圆形向前撅
+    if ([pinyin containsString:@"u"] ||
+        [pinyin containsString:@"ve"] ||
+        [pinyin containsString:@"iou"] ||
+        [pinyin containsString:@"un"] ||
+        [pinyin containsString:@"ui"] ||
+        [pinyin containsString:@"w"]) {
+        return @"U";
+    }
+    return @"";
+}
 @end

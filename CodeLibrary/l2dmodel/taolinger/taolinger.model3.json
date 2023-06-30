@@ -1,0 +1,48 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "taolinger.moc3",
+		"Textures": [
+			"taolinger.2048/taolinger_texture_00.png"
+		],
+		"Physics": "taolinger.physics3.json",
+		"DisplayInfo": "taolinger.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "taolinger.BQ1.exp3.json",
+				"File": "taolinger.BQ1.exp3.json"
+			},
+			{
+				"Name": "taolinger.BQ2.exp3.json",
+				"File": "taolinger.BQ2.exp3.json"
+			},
+			{
+				"Name": "taolinger.BQ3.exp3.json",
+				"File": "taolinger.BQ3.exp3.json"
+			},
+			{
+				"Name": "taolinger.BQ4.exp3.json",
+				"File": "taolinger.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthForm",
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

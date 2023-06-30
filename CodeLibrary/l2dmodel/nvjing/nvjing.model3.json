@@ -1,0 +1,44 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "nvjing.moc3",
+		"Textures": [
+			"nvjing.4096/texture_00.png"
+		],
+		"Physics": "nvjing.physics3.json",
+		"Expressions": [
+			{
+				"Name": "BQ1.exp3.json",
+				"File": "expressions/BQ1.exp3.json"
+			},
+			{
+				"Name": "BQ2.exp3.json",
+				"File": "expressions/BQ2.exp3.json"
+			},
+			{
+				"Name": "BQ3.exp3.json",
+				"File": "expressions/BQ3.exp3.json"
+			},
+			{
+				"Name": "BQ4.exp3.json",
+				"File": "expressions/BQ4.exp3.json"
+			},
+			{
+				"Name": "BQ5.exp3.json",
+				"File": "expressions/BQ5.exp3.json"
+			},
+			{
+				"Name": "Reset.exp3.json",
+				"File": "expressions/Reset.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

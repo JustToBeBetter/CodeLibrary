@@ -1,0 +1,26 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "dashuRe.moc3",
+		"Textures": [
+			"dashuRe.2048/dashuRe_texture_00.png"
+		],
+		"Physics": "dashuRe.physics3.json",
+		"DisplayInfo": "dashuRe.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	]
+}

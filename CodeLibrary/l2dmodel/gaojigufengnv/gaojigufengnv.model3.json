@@ -1,0 +1,42 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "gaojigufengnv.moc3",
+		"Textures": [
+			"gaojigufengnv.2048/gaojigufengnv_texture_00.png"
+		],
+		"Physics": "gaojigufengnv.physics3.json",
+		"DisplayInfo": "gaojigufengnv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "gaojigufengnv.BQ1.exp3.json",
+				"File": "gaojigufengnv.BQ1.exp3.json"
+			},
+			{
+				"Name": "gaojigufengnv.BQ2.exp3.json",
+				"File": "gaojigufengnv.BQ2.exp3.json"
+			},
+			{
+				"Name": "gaojigufengnv.BQ3.exp3.json",
+				"File": "gaojigufengnv.BQ3.exp3.json"
+			},
+			{
+				"Name": "gaojigufengnv.BQ4.exp3.json",
+				"File": "gaojigufengnv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

@@ -1,0 +1,37 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "yuyinv.moc3",
+		"Textures": [
+			"yuyinv.2048/yuyinv_texture_00.png"
+		],
+		"Physics": "yuyinv.physics3.json",
+		"DisplayInfo": "yuyinv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "yuyinv.BQ1.exp3.json",
+				"File": "yuyinv.BQ1.exp3.json"
+			},
+			{
+				"Name": "yuyinv.BQ2.exp3.json",
+				"File": "yuyinv.BQ2.exp3.json"
+			},
+			{
+				"Name": "yuyinv.BQ3.exp3.json",
+				"File": "yuyinv.BQ3.exp3.json"
+			},
+			{
+				"Name": "yuyinv.BQ4.exp3.json",
+				"File": "yuyinv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

@@ -1,0 +1,48 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "qingrenjienv.moc3",
+		"Textures": [
+			"qingrenjienv.2048/qingrenjienv_texture_00.png"
+		],
+		"Physics": "qingrenjienv.physics3.json",
+		"DisplayInfo": "qingrenjienv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "qingrenjienv.BQ1.exp3.json",
+				"File": "qingrenjienv.BQ1.exp3.json"
+			},
+			{
+				"Name": "qingrenjienv.BQ2.exp3.json",
+				"File": "qingrenjienv.BQ2.exp3.json"
+			},
+			{
+				"Name": "qingrenjienv.BQ3.exp3.json",
+				"File": "qingrenjienv.BQ3.exp3.json"
+			},
+			{
+				"Name": "qingrenjienv.BQ4.exp3.json",
+				"File": "qingrenjienv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthForm",
+				"ParamMouthOpenY"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	],
+	"HitAreas": []
+}

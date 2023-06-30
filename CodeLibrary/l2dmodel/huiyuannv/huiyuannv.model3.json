@@ -1,0 +1,45 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "huiyuannv.moc3",
+		"Textures": [
+			"huiyuannv.2048/huiyuannv_texture_00.png"
+		],
+		"Physics": "huiyuannv.physics3.json",
+		"DisplayInfo": "huiyuannv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "huiyuannv.BQ1.exp3.json",
+				"File": "huiyuannv.BQ1.exp3.json"
+			},
+			{
+				"Name": "huiyuannv.BQ2.exp3.json",
+				"File": "huiyuannv.BQ2.exp3.json"
+			},
+			{
+				"Name": "huiyuannv.BQ3.exp3.json",
+				"File": "huiyuannv.BQ3.exp3.json"
+			},
+			{
+				"Name": "huiyuannv.BQ4.exp3.json",
+				"File": "huiyuannv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	],
+	"HitAreas": []
+}

@@ -1,0 +1,48 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "kunvhai.moc3",
+		"Textures": [
+			"kunvhai.2048/kunvhai_texture_00.png"
+		],
+		"Physics": "kunvhai.physics3.json",
+		"DisplayInfo": "kunvhai.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "kunvhai.BQ1.exp3.json",
+				"File": "kunvhai.BQ1.exp3.json"
+			},
+			{
+				"Name": "kunvhai.BQ2.exp3.json",
+				"File": "kunvhai.BQ2.exp3.json"
+			},
+			{
+				"Name": "kunvhai.BQ3.exp3.json",
+				"File": "kunvhai.BQ3.exp3.json"
+			},
+			{
+				"Name": "kunvhai.BQ4.exp3.json",
+				"File": "kunvhai.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthForm",
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

@@ -1,0 +1,45 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "putongoushaonv.moc3",
+		"Textures": [
+			"putongoushaonv.2048/putongoushaonv_texture_00.png"
+		],
+		"Physics": "putongoushaonv.physics3.json",
+		"DisplayInfo": "putongoushaonv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "putongoushaonv.BQ1.exp3.json",
+				"File": "putongoushaonv.BQ1.exp3.json"
+			},
+			{
+				"Name": "putongoushaonv.BQ2.exp3.json",
+				"File": "putongoushaonv.BQ2.exp3.json"
+			},
+			{
+				"Name": "putongoushaonv.BQ3.exp3.json",
+				"File": "putongoushaonv.BQ3.exp3.json"
+			},
+			{
+				"Name": "putongoushaonv.BQ4.exp3.json",
+				"File": "putongoushaonv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

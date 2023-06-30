@@ -51,4 +51,9 @@
 
 + (NSDictionary *)getIPAddresses;
 
+/**下载虚拟形象资源*/
++ (void)downLoadL2dModelWithUrl:(NSString *)url complete:(nullable void (^)(BOOL sucess))complete;
+
++ (NSString *_Nullable)getLipTypeWithString:(NSString *_Nonnull)word;
+
 @end

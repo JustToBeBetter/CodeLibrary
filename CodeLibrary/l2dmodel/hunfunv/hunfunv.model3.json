@@ -1,0 +1,45 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "hunfunv.moc3",
+		"Textures": [
+			"hunfunv.2048/hunfunv_texture_00.png"
+		],
+		"Physics": "hunfunv.physics3.json",
+		"DisplayInfo": "hunfunv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "hunfunv.BQ1.exp3.json",
+				"File": "hunfunv.BQ1.exp3.json"
+			},
+			{
+				"Name": "hunfunv.BQ2.exp3.json",
+				"File": "hunfunv.BQ2.exp3.json"
+			},
+			{
+				"Name": "hunfunv.BQ3.exp3.json",
+				"File": "hunfunv.BQ3.exp3.json"
+			},
+			{
+				"Name": "hunfunv.BQ4.exp3.json",
+				"File": "hunfunv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	],
+	"HitAreas": []
+}

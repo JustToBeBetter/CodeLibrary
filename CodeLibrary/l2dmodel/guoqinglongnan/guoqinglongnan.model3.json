@@ -1,0 +1,45 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "guoqinglongnan.moc3",
+		"Textures": [
+			"guoqinglongnan.2048/guoqinglongnan_texture_00.png"
+		],
+		"Physics": "guoqinglongnan.physics3.json",
+		"DisplayInfo": "guoqinglongnan.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "guoqinglongnan.BQ1.exp3.json",
+				"File": "guoqinglongnan.BQ1.exp3.json"
+			},
+			{
+				"Name": "guoqinglongnan.BQ2.exp3.json",
+				"File": "guoqinglongnan.BQ2.exp3.json"
+			},
+			{
+				"Name": "guoqinglongnan.BQ3.exp3.json",
+				"File": "guoqinglongnan.BQ3.exp3.json"
+			},
+			{
+				"Name": "guoqinglongnan.BQ4.exp3.json",
+				"File": "guoqinglongnan.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

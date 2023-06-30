@@ -1,0 +1,258 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼　开闭"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼　微笑"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼   开闭"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼　微笑"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "ParamGroup2",
+			"Name": "眼球 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "ParamGroup2",
+			"Name": "眼球 Y"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "ParamGroup2",
+			"Name": "眼睛状态L"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "ParamGroup2",
+			"Name": "眼睛状态R"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroup2",
+			"Name": "左眉上下"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroup2",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "ParamGroup2",
+			"Name": "嘴部　变形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "ParamGroup2",
+			"Name": "嘴巴　张开和闭合"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "ParamGroup3",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup3",
+			"Name": "摇动 前发"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup3",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup3",
+			"Name": "摇动 后发"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "ParamGroup3",
+			"Name": "马尾转动"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup3",
+			"Name": "衣服 左右"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "ParamGroup3",
+			"Name": "衣服 上下"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "ParamGroup3",
+			"Name": "胸 X"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "ParamGroup3",
+			"Name": "熊 Y"
+		},
+		{
+			"Id": "Param_Angle_Rotation_1_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[0]ﾂ�ﾎｲ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_2_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[1]ﾂ�ﾎｲ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_3_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[2]ﾂ�ﾎｲ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_4_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[3]ﾂ�ﾎｲ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_5_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[4]ﾂ�ﾎｲ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_6_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[5]ﾂ�ﾎｲ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_7_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[6]ﾂ�ﾎｲ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_8_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[7]ﾂ�ﾎｲ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_9_ArtMesh51",
+			"GroupId": "ParamGroup4",
+			"Name": "[8]ﾂ�ﾎｲ"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "角度"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "五官"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "物理"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "后发"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part23",
+			"Name": "小迷.改.psd(未找到对应图层)"
+		},
+		{
+			"Id": "Part",
+			"Name": "ﾍｷ"
+		},
+		{
+			"Id": "Part7",
+			"Name": "ﾉ�ﾗﾓ"
+		},
+		{
+			"Id": "ArtMesh51_Skinning",
+			"Name": "ﾂ�ﾎｲ(蒙皮)"
+		},
+		{
+			"Id": "Part12",
+			"Name": "ﾂ�ﾎｲ(回转)"
+		},
+		{
+			"Id": "Part18",
+			"Name": "ﾉ�ﾗﾓ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "眉毛"
+		},
+		{
+			"Id": "Part3",
+			"Name": "眼睛L"
+		},
+		{
+			"Id": "Part4",
+			"Name": "眼睛R"
+		},
+		{
+			"Id": "Part5",
+			"Name": "嘴巴"
+		},
+		{
+			"Id": "Part6",
+			"Name": "ﾁｳ"
+		},
+		{
+			"Id": "Part8",
+			"Name": "ｺ�ｵ�ｽ�"
+		},
+		{
+			"Id": "Part9",
+			"Name": "ﾉ�ﾗﾓ"
+		},
+		{
+			"Id": "Part20",
+			"Name": "ﾉ�ﾗﾓ"
+		},
+		{
+			"Id": "Part10",
+			"Name": "ﾓﾒﾊﾖ"
+		},
+		{
+			"Id": "Part11",
+			"Name": "ﾗ�ﾊﾖ"
+		}
+	]
+}

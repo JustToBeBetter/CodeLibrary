@@ -1,0 +1,378 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "ParamGroup",
+			"Name": "身体旋转　Z"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "ParamGroup",
+			"Name": "身体旋转　Y"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "ParamGroup",
+			"Name": "身体旋转　X"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "ParamGroup",
+			"Name": "脸颊"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼　开闭"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼　微笑"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼   开闭"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼　微笑"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "ParamGroup2",
+			"Name": "眼球 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "ParamGroup2",
+			"Name": "眼球 Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroup2",
+			"Name": "左眉上下"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroup2",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup2",
+			"Name": "左眼状态"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup2",
+			"Name": "右眼状态"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "ParamGroup2",
+			"Name": "左眉　左右"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "ParamGroup2",
+			"Name": "右眉　左右"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "ParamGroup2",
+			"Name": "左眉　角度"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "ParamGroup2",
+			"Name": "右眉　角度"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "ParamGroup2",
+			"Name": "左眉　変形"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "ParamGroup2",
+			"Name": "右眉　変形"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "ParamGroup2",
+			"Name": "嘴部　变形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "ParamGroup2",
+			"Name": "嘴巴　张开和闭合"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "ParamGroup3",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "ParamGroup3",
+			"Name": "摇动　前发"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup3",
+			"Name": "1"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "ParamGroup3",
+			"Name": "摇动　侧发"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup3",
+			"Name": "1"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "ParamGroup3",
+			"Name": "摇动　后发"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "ParamGroup3",
+			"Name": "1"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "ParamGroup3",
+			"Name": "摇动 蝴蝶结"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "ParamGroup3",
+			"Name": "1"
+		},
+		{
+			"Id": "Param_Angle_Rotation_1_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[0]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_2_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[1]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_3_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[2]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_4_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[3]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_5_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[4]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_6_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[5]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_7_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[6]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_8_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[7]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_9_piaodai",
+			"GroupId": "ParamGroup4",
+			"Name": "[8]piaodai"
+		},
+		{
+			"Id": "Param_Angle_Rotation_1_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[0]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_2_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[1]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_3_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[2]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_4_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[3]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_5_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[4]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_6_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[5]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_7_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[6]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_8_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[7]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "Param_Angle_Rotation_9_ArtMesh7",
+			"GroupId": "ParamGroup5",
+			"Name": "[8]piaodai ｸｱｱｾ"
+		},
+		{
+			"Id": "ParamBQ1",
+			"GroupId": "",
+			"Name": "BQ1"
+		},
+		{
+			"Id": "ParamBQ2",
+			"GroupId": "",
+			"Name": "BQ2"
+		},
+		{
+			"Id": "ParamBQ3",
+			"GroupId": "",
+			"Name": "BQ3"
+		},
+		{
+			"Id": "ParamBQ4",
+			"GroupId": "",
+			"Name": "BQ4"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "角度"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "五官"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "物理"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "piaodai"
+		},
+		{
+			"Id": "ParamGroup5",
+			"GroupId": "",
+			"Name": "piaodai ｸｱｱｾ"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "桃灵儿.psd(未找到对应图层)"
+		},
+		{
+			"Id": "head",
+			"Name": "head"
+		},
+		{
+			"Id": "piaodaiR",
+			"Name": "piaodaiR"
+		},
+		{
+			"Id": "piaodaiL",
+			"Name": "piaodaiL"
+		},
+		{
+			"Id": "head2",
+			"Name": "head"
+		},
+		{
+			"Id": "liuhai",
+			"Name": "liuhai"
+		},
+		{
+			"Id": "wuguan",
+			"Name": "wuguan"
+		},
+		{
+			"Id": "bianziL",
+			"Name": "bianziL"
+		},
+		{
+			"Id": "bianziR",
+			"Name": "bianziR"
+		},
+		{
+			"Id": "ArtMesh7_Skinning",
+			"Name": "piaodai ｸｱｱｾ(蒙皮)"
+		},
+		{
+			"Id": "Part3",
+			"Name": "piaodai ｸｱｱｾ(回转)"
+		},
+		{
+			"Id": "piaodai_Skinning",
+			"Name": "piaodai(蒙皮)"
+		},
+		{
+			"Id": "Part2",
+			"Name": "piaodai(回转)"
+		},
+		{
+			"Id": "eyeR",
+			"Name": "eyeR"
+		},
+		{
+			"Id": "eyeL",
+			"Name": "eyeL"
+		},
+		{
+			"Id": "zui",
+			"Name": "zui"
+		}
+	]
+}

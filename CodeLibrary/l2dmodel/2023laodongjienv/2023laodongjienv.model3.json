@@ -1,0 +1,49 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "2023laodongjienv.moc3",
+		"Textures": [
+			"2023laodongjienv.2048/2023laodongjienv_texture_00.png"
+		],
+		"Physics": "2023laodongjienv.physics3.json",
+		"DisplayInfo": "2023laodongjienv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "2023laodongjienv.BQ1.exp3.json",
+				"File": "2023laodongjienv.BQ1.exp3.json"
+			},
+			{
+				"Name": "2023laodongjienv.BQ2.exp3.json",
+				"File": "2023laodongjienv.BQ2.exp3.json"
+			},
+			{
+				"Name": "2023laodongjienv.BQ3.exp3.json",
+				"File": "2023laodongjienv.BQ3.exp3.json"
+			},
+			{
+				"Name": "2023laodongjienv.BQ4.exp3.json",
+				"File": "2023laodongjienv.BQ4.exp3.json"
+			},
+			{
+				"Name": "2023laodongjienv.BQ5.exp3.json",
+				"File": "2023laodongjienv.BQ5.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

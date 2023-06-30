@@ -1,0 +1,48 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "gufengnv.moc3",
+		"Textures": [
+			"gufengnv.2048/gufengnv_texture_00.png"
+		],
+		"Physics": "gufengnv.physics3.json",
+		"DisplayInfo": "gufengnv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "gufengnv.BQ1.exp3.json",
+				"File": "gufengnv.expressions/gufengnv.BQ1.exp3.json"
+			},
+			{
+				"Name": "gufengnv.BQ2.exp3.json",
+				"File": "gufengnv.expressions/gufengnv.BQ2.exp3.json"
+			},
+			{
+				"Name": "gufengnv.BQ3.exp3.json",
+				"File": "gufengnv.expressions/gufengnv.BQ3.exp3.json"
+			},
+			{
+				"Name": "gufengnv.BQ4.exp3.json",
+				"File": "gufengnv.expressions/gufengnv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthForm",
+				"ParamMouthOpenY"
+			]
+		}
+	],
+	"HitAreas": []
+}

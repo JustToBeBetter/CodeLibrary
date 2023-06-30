@@ -1,0 +1,37 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "chunjienv.moc3",
+		"Textures": [
+			"chunjienv.2048/chunjienv_texture_00.png"
+		],
+		"Physics": "chunjienv.physics3.json",
+		"DisplayInfo": "chunjienv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "chunjienv.BQ1.exp3.json",
+				"File": "chunjienv.BQ1.exp3.json"
+			},
+			{
+				"Name": "chunjienv.BQ2.exp3.json",
+				"File": "chunjienv.BQ2.exp3.json"
+			},
+			{
+				"Name": "chunjienv.BQ3.exp3.json",
+				"File": "chunjienv.BQ3.exp3.json"
+			},
+			{
+				"Name": "chunjienv.BQ4.exp3.json",
+				"File": "chunjienv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

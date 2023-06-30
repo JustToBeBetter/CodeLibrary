@@ -1,0 +1,477 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBQ1",
+			"GroupId": "ParamGroup",
+			"Name": "BQ1"
+		},
+		{
+			"Id": "ParamBQ2",
+			"GroupId": "ParamGroup",
+			"Name": "BQ2"
+		},
+		{
+			"Id": "ParamBQ3",
+			"GroupId": "ParamGroup",
+			"Name": "BQ3"
+		},
+		{
+			"Id": "ParamBQ4",
+			"GroupId": "ParamGroup",
+			"Name": "BQ4"
+		},
+		{
+			"Id": "ParamBQ5",
+			"GroupId": "ParamGroup",
+			"Name": "BQ5"
+		},
+		{
+			"Id": "ParamBQ6",
+			"GroupId": "ParamGroup",
+			"Name": "BQ6"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroup2",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroup2",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "ParamGroup2",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup3",
+			"Name": "左眼　开闭"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroup3",
+			"Name": "左眼　微笑"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup3",
+			"Name": "右眼"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "ParamGroup3",
+			"Name": "右眼　微笑"
+		},
+		{
+			"Id": "ParamEyePhyL",
+			"GroupId": "ParamGroup3",
+			"Name": "左眼球状态"
+		},
+		{
+			"Id": "ParamEyePhyR",
+			"GroupId": "ParamGroup3",
+			"Name": "右眼球状态"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "ParamGroup3",
+			"Name": "眼球 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "ParamGroup3",
+			"Name": "眼球 Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroup3",
+			"Name": "左眉上下"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroup3",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "ParamGroup3",
+			"Name": "左眉　左右"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "ParamGroup3",
+			"Name": "右眉　左右"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "ParamGroup3",
+			"Name": "左眉　角度"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "ParamGroup3",
+			"Name": "右眉　角度"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "ParamGroup3",
+			"Name": "左眉　変形"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "ParamGroup3",
+			"Name": "右眉　変形"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "ParamGroup4",
+			"Name": "嘴部　变形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "ParamGroup4",
+			"Name": "嘴巴　张开和闭合"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "ParamGroup4",
+			"Name": "脸颊"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "ParamGroup4",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动　前发"
+		},
+		{
+			"Id": "ParamHairFront2",
+			"GroupId": "ParamGroup6",
+			"Name": "前发1"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动　侧发"
+		},
+		{
+			"Id": "ParamHairSide2",
+			"GroupId": "ParamGroup6",
+			"Name": "侧发2"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "ParamGroup6",
+			"Name": "摇动　后发"
+		},
+		{
+			"Id": "ParamHairBack2",
+			"GroupId": "ParamGroup6",
+			"Name": "后发2"
+		},
+		{
+			"Id": "ParamHairBack3",
+			"GroupId": "ParamGroup6",
+			"Name": "后发3"
+		},
+		{
+			"Id": "ParamxiongX",
+			"GroupId": "ParamGroup6",
+			"Name": "胸X"
+		},
+		{
+			"Id": "ParamxiongY",
+			"GroupId": "ParamGroup6",
+			"Name": "胸Y"
+		},
+		{
+			"Id": "Parampeishi1",
+			"GroupId": "ParamGroup6",
+			"Name": "配饰1"
+		},
+		{
+			"Id": "Parampeishi11",
+			"GroupId": "ParamGroup6",
+			"Name": "配饰11"
+		},
+		{
+			"Id": "Parampeishi2",
+			"GroupId": "ParamGroup6",
+			"Name": "配饰2"
+		},
+		{
+			"Id": "Parampeishi22",
+			"GroupId": "ParamGroup6",
+			"Name": "配饰22"
+		},
+		{
+			"Id": "Parampeishi3",
+			"GroupId": "ParamGroup6",
+			"Name": "配饰3"
+		},
+		{
+			"Id": "Parampeishi33",
+			"GroupId": "ParamGroup6",
+			"Name": "配饰33"
+		},
+		{
+			"Id": "Parampeishi333",
+			"GroupId": "ParamGroup6",
+			"Name": "配饰333"
+		},
+		{
+			"Id": "Paramweiba1",
+			"GroupId": "ParamGroup6",
+			"Name": "尾巴1"
+		},
+		{
+			"Id": "Paramweiba2",
+			"GroupId": "ParamGroup6",
+			"Name": "尾巴2"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "ParamGroup5",
+			"Name": "身体旋转　X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "ParamGroup5",
+			"Name": "身体旋转　Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "ParamGroup5",
+			"Name": "身体旋转　Z"
+		},
+		{
+			"Id": "Param_Angle_Rotation_1_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[0]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_2_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[1]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_3_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[2]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_4_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[3]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_5_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[4]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_6_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[5]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_7_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[6]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_8_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[7]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_9_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[8]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_10_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[9]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_11_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[10]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_12_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[11]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_13_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[12]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_14_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[13]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_15_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[14]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_16_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[15]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_17_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[16]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_18_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[17]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_19_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[18]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_20_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[19]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_21_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[20]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_22_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[21]weiba"
+		},
+		{
+			"Id": "Param_Angle_Rotation_23_weiba",
+			"GroupId": "ParamGroup7",
+			"Name": "[22]weiba"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "表情"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "头"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "眉眼"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "嘴"
+		},
+		{
+			"Id": "ParamGroup6",
+			"GroupId": "",
+			"Name": "物理"
+		},
+		{
+			"Id": "ParamGroup5",
+			"GroupId": "",
+			"Name": "身体"
+		},
+		{
+			"Id": "ParamGroup7",
+			"GroupId": "",
+			"Name": "weiba"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part3",
+			"Name": "guoqinglongnan.psd(未找到对应图层)"
+		},
+		{
+			"Id": "Part",
+			"Name": "hua R"
+		},
+		{
+			"Id": "liuhai",
+			"Name": "liuhai"
+		},
+		{
+			"Id": "wuguan",
+			"Name": "wuguan"
+		},
+		{
+			"Id": "face",
+			"Name": "face"
+		},
+		{
+			"Id": "ear",
+			"Name": "ear"
+		},
+		{
+			"Id": "body",
+			"Name": "body"
+		},
+		{
+			"Id": "leg",
+			"Name": "leg"
+		},
+		{
+			"Id": "hair",
+			"Name": "hair"
+		},
+		{
+			"Id": "weiba_Skinning",
+			"Name": "weiba(蒙皮)"
+		},
+		{
+			"Id": "Part2",
+			"Name": "weiba(回转)"
+		},
+		{
+			"Id": "hair2",
+			"Name": "hair"
+		},
+		{
+			"Id": "eyeL",
+			"Name": "eyeL"
+		},
+		{
+			"Id": "eyeR",
+			"Name": "eyeR"
+		},
+		{
+			"Id": "zui2",
+			"Name": "zui"
+		},
+		{
+			"Id": "armR",
+			"Name": "armR"
+		},
+		{
+			"Id": "qun",
+			"Name": "qun"
+		}
+	]
+}

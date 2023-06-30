@@ -1,0 +1,70 @@
+{
+  "name": "YKFaceSDK",
+  "version": "0.1.5",
+  "summary": "人脸跟踪和特效SDK",
+  "description": "人脸跟踪和特效SDK",
+  "homepage": "https://code.dobest.com/ios/YKFaceSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "toss156": "308276366@qq.com"
+  },
+  "source": {
+    "git": "git@code.dobest.com:ios/YKFaceSDK.git",
+    "tag": "0.1.5"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "module_name": "YKFaceSDK",
+  "source_files": [
+    "YKFaceSDK/Classes/*",
+    "YKFaceSDK/Classes/**/*",
+    "YKFaceSDK/Classes/**/**/*"
+  ],
+  "resources": [
+    "YKFaceSDK/Assets/faceModel.bundle",
+    "YKFaceSDK/Assets/faceStickers.bundle",
+    "YKFaceSDK/Assets/tnn.bundle"
+  ],
+  "public_header_files": [
+    "YKFaceSDK/Classes/*.h",
+    "YKFaceSDK/Classes/Filter/*.h",
+    "YKFaceSDK/Classes/Sticker/*.h"
+  ],
+  "frameworks": [
+    "UIKit",
+    "AVFoundation",
+    "CoreVideo",
+    "CoreMedia",
+    "CoreImage",
+    "Metal",
+    "CoreML",
+    "Accelerate"
+  ],
+  "ios": {
+    "vendored_frameworks": [
+      "YKFaceSDK/Lib/tnn.framework",
+      "YKFaceSDK/Lib/opencv2.framework"
+    ]
+  },
+  "xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  },
+  "dependencies": {
+    "GPUImage": [
+
+    ],
+    "SSZipArchive": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  }
+}

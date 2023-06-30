@@ -1,0 +1,37 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "yuyinan.moc3",
+		"Textures": [
+			"yuyinan.2048/yuyinan_texture_00.png"
+		],
+		"Physics": "yuyinan.physics3.json",
+		"DisplayInfo": "yuyinan.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "yuyinan.BQ1.exp3.json",
+				"File": "yuyinan.BQ1.exp3.json"
+			},
+			{
+				"Name": "yuyinan.BQ2.exp3.json",
+				"File": "yuyinan.BQ2.exp3.json"
+			},
+			{
+				"Name": "yuyinan.BQ3.exp3.json",
+				"File": "yuyinan.BQ3.exp3.json"
+			},
+			{
+				"Name": "yuyinan.BQ4.exp3.json",
+				"File": "yuyinan.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

@@ -1,80 +1,104 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (3.6.2):
-    - CocoaLumberjack/Core (= 3.6.2)
-  - CocoaLumberjack/Core (3.6.2)
-  - FLAnimatedImage (1.0.12)
-  - libwebp (1.2.0):
-    - libwebp/demux (= 1.2.0)
-    - libwebp/mux (= 1.2.0)
-    - libwebp/webp (= 1.2.0)
-  - libwebp/demux (1.2.0):
+  - CocoaAsyncSocket (7.6.5)
+  - CocoaLumberjack (3.8.0):
+    - CocoaLumberjack/Core (= 3.8.0)
+  - CocoaLumberjack/Core (3.8.0)
+  - FLAnimatedImage (1.0.17)
+  - GPUImage (0.1.7)
+  - libwebp (1.2.4):
+    - libwebp/demux (= 1.2.4)
+    - libwebp/mux (= 1.2.4)
+    - libwebp/webp (= 1.2.4)
+  - libwebp/demux (1.2.4):
     - libwebp/webp
-  - libwebp/mux (1.2.0):
+  - libwebp/mux (1.2.4):
     - libwebp/demux
-  - libwebp/webp (1.2.0)
+  - libwebp/webp (1.2.4)
   - Masonry (1.1.0)
-  - SDWebImage (5.9.5):
-    - SDWebImage/Core (= 5.9.5)
-  - SDWebImage/Core (5.9.5)
-  - SDWebImageFLPlugin (0.4.0):
+  - MJExtension (3.2.4)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+  - SDWebImageFLPlugin (0.6.0):
     - FLAnimatedImage (>= 1.0.11)
-    - SDWebImage/Core (~> 5.6)
-  - SDWebImageWebPCoder (0.6.1):
+    - SDWebImage/Core (~> 5.10)
+  - SDWebImageWebPCoder (0.9.1):
     - libwebp (~> 1.0)
-    - SDWebImage/Core (~> 5.7)
-  - SSZipArchive (2.2.2)
+    - SDWebImage/Core (~> 5.13)
+  - SnapKit (5.6.0)
+  - SSZipArchive (2.4.3)
   - SVProgressHUD (2.2.5)
+  - YKFaceSDK (0.1.5):
+    - GPUImage
+    - SSZipArchive
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaAsyncSocket
   - CocoaLumberjack
   - Masonry
+  - MJExtension (~> 3.2.2)
   - SDWebImage
   - SDWebImageFLPlugin
   - SDWebImageWebPCoder
+  - SnapKit
   - SSZipArchive
   - SVProgressHUD
+  - YKFaceSDK (from `./YKFaceSDK`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - CocoaAsyncSocket
     - CocoaLumberjack
     - FLAnimatedImage
+    - GPUImage
     - libwebp
     - Masonry
+    - MJExtension
     - SDWebImage
     - SDWebImageFLPlugin
     - SDWebImageWebPCoder
+    - SnapKit
     - SSZipArchive
     - SVProgressHUD
 
+EXTERNAL SOURCES:
+  YKFaceSDK:
+    :path: "./YKFaceSDK"
+
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
-  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  libwebp: 6bac0a99ba5a6bb7449a951ff22c484201985f68
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  libwebp: f62cb61d0a484ba548448a4bd52aabf150ff6eef
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
-  SDWebImageFLPlugin: 6c2295fb1242d44467c6c87dc5db6b0a13228fd8
-  SDWebImageWebPCoder: d0dac55073088d24b2ac1b191a71a8f8d0adac21
-  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
+  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+  SDWebImageFLPlugin: 72efd2cfbf565bc438421abb426f4bcf7b670754
+  SDWebImageWebPCoder: 18503de6621dd2c420d680e33d46bf8e1d5169b0
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YKFaceSDK: ccebef36560e7625a18471ae3bd0942bb4b851c4
 
-PODFILE CHECKSUM: 8a16a7a46c0482d1176db0da877971a6bf5b8c5b
+PODFILE CHECKSUM: fd1f2a58c2151c6d841a4deaf3042fff39b4dfb8
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

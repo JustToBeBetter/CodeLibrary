@@ -1,0 +1,1 @@
+../../../../YKFaceSDK/YKFaceSDK/Classes/Sticker/YKFaceStickersManager.h

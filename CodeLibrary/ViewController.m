@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LJZDeveiceInfo.h"
+#import <CodeLibrary-Swift.h>
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -15,6 +16,7 @@
 }
 @property (strong,nonatomic)UITableView *table;
 
+@property (nonatomic, strong) UIView *headView;
 
 @end
 
@@ -34,10 +36,22 @@
      }
     
     NSLog(@"\n device:%@\n safeTop:%f \n safeBtm:%f \n statusBarH:%f\n navBarHeight:%f",LJZDeveiceInfo.phoneType,LJZDeveiceInfo.safe_top,LJZDeveiceInfo.safe_bottom,LJZDeveiceInfo.statusBarHeight,LJZDeveiceInfo.navBarHeight);
-    
+    [self loadL2dData];
 }
 - (void)initData{
-    _dataArray = @[@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer",@"BlurEffect",@"GifWebPImg",@"Log",@"AudioConvert",@"AppGray",@"UploadToPhone"];
+    _dataArray = @[@"ASR",@"UIDynamicAnimator",@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer",@"BlurEffect",@"GifWebPImg",@"Log",@"AudioConvert",@"AppGray",@"UploadToPhone"];
+}
+- (void)loadL2dData{
+    NSArray *dataArray = @[@"https://jqsj-oss-online.oss-cn-hangzhou.aliyuncs.com/md2/live2d/fayi04.zip",
+          @"https://jqsj-oss-online.oss-cn-hangzhou.aliyuncs.com/md2/live2d/luoli.zip",
+          @"https://jqsj-oss-online.oss-cn-hangzhou.aliyuncs.com/md2/live2d/xiaomi4.zip",
+          @"https://jqsj-oss-online.oss-cn-hangzhou.aliyuncs.com/md2/live2d/gzszt4.zip",
+          @"https://jqsj-oss-online.oss-cn-hangzhou.aliyuncs.com/md2/live2d/3/xiaowu.zip",
+          @"https://jqsj-oss-online.oss-cn-hangzhou.aliyuncs.com/md2/live2d/1/xiaomi.zip",
+    ];
+    for (NSString *url in dataArray) {
+        [LJZTool downLoadL2dModelWithUrl:url complete:nil];
+    }
 }
 - (UITableView *)table{
     
@@ -69,7 +83,12 @@
         [_dataArray[indexPath.row] isEqualToString:@"LJZPlayer"]) {
         
         [self presentViewController:VC animated:YES completion:nil];
-    }else{
+    }if ([_dataArray[indexPath.row] isEqualToString:@"ASR"]) {
+        UIViewController *asrVC = [[ASRViewController alloc]init];
+        [self.navigationController pushViewController:asrVC animated:YES];
+//        asrVC.modalPresentationStyle = UIModalPresentationOverFullScreen;
+//        [self presentViewController:asrVC animated:YES completion:nil];
+     }else{
         VC.title = _dataArray[indexPath.row];
         [self.navigationController pushViewController:VC animated:YES];
     }

@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "azheng.moc3",
+		"Textures": [
+			"azheng.2048/azheng_texture_00.png"
+		],
+		"Physics": "azheng.physics3.json",
+		"DisplayInfo": "azheng.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

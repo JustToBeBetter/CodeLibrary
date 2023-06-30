@@ -7,6 +7,7 @@
 //
 
 #import "LogViewController.h"
+#import <SSZipArchive/SSZipArchive.h>
 
 @interface LogViewController ()<UIDocumentInteractionControllerDelegate>
 

@@ -1,0 +1,45 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "2023yurenjienv.moc3",
+		"Textures": [
+			"2023yurenjienv.2048/2023yurenjienv_texture_00.png"
+		],
+		"Physics": "2023yurenjienv.physics3.json",
+		"DisplayInfo": "2023yurenjienv.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "2023yurenjienv.BQ1.exp3.json",
+				"File": "2023yurenjienv.BQ1.exp3.json"
+			},
+			{
+				"Name": "2023yurenjienv.BQ2.exp3.json",
+				"File": "2023yurenjienv.BQ2.exp3.json"
+			},
+			{
+				"Name": "2023yurenjienv.BQ3.exp3.json",
+				"File": "2023yurenjienv.BQ3.exp3.json"
+			},
+			{
+				"Name": "2023yurenjienv.BQ4.exp3.json",
+				"File": "2023yurenjienv.BQ4.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

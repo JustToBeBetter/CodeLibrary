@@ -11,6 +11,12 @@
 
 #import "LJZTool.h"
 #import "UIView+LJZ.h"
+#import "NSFileManager+path.h"
+#import "NSDictionary+json.h"
+#import "NSMutableArray+safe.h"
+#import "NSArray+safe.h"
+#import "NSString+Tools.h"
+//Third
 #import <SDWebImage/UIImage+GIF.h>
 #import "FLAnimatedImageView.h"
 #import "FLAnimatedImage.h"
@@ -18,9 +24,13 @@
 #import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
 #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
-#import "LJZLogFormatter.h"
-#import <SSZipArchive/SSZipArchive.h>
+#import <AFNetworking/AFNetworking.h>
+//#import <SSZipArchive/SSZipArchive.h>
 #import "HTTPServer.h"
+#import <MJExtension/MJExtension.h>
+//tools
+#import "LJZLogFormatter.h"
+#import "MMAuthorizationHelper.h"
 
 #define WeakObj(o) @autoreleasepool{} __weak typeof(o) o##Weak = o;
 #define StrongObj(o) @autoreleasepool{} __strong typeof(o) o = o##Weak;
@@ -39,7 +49,14 @@
 #define kRegularFont(a) [UIFont fontWithName:@"PingFangSC-Regular" size:a]
 #define kSemiboldFont(a) [UIFont fontWithName:@"PingFangSC-Semibold" size:a]
 #define kBoldFont(a) [UIFont fontWithName:@"Helvetica-Bold" size:a]
+// 颜色 字体
+#define HEXRGBA(RGBValue,a) [UIColor colorWithRed:((float)((RGBValue & 0xFF0000) >> 16))/255.0 green:((float)((RGBValue & 0x00FF00) >> 8))/255.0 blue:((float)(RGBValue & 0x0000FF))/255.0 alpha:a]
+#define HEXRGB(RGBValue)  HEXRGBA(RGBValue,1.0f)
 
+//当前系统版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+//版本判断语句,是否是version以后的
+#define IOS(version) (([[[UIDevice currentDevice] systemVersion] intValue] >= version)?1:0)
 
 #ifdef DEBUG
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;

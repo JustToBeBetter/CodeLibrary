@@ -1,0 +1,259 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左眼　開閉"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右眼　開閉"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "左眼　笑顔"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "目玉 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "目玉 Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "左眉　上下"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "口　変形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "口　開閉"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "体の回転　X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "体の回転　Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "体の回転　Z"
+		},
+		{
+			"Id": "PARAM_ARM_L",
+			"GroupId": "",
+			"Name": "左腕"
+		},
+		{
+			"Id": "PARAM_ARM_R",
+			"GroupId": "",
+			"Name": "右腕"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Paramcry",
+			"GroupId": "",
+			"Name": "cry"
+		},
+		{
+			"Id": "Paramheart",
+			"GroupId": "",
+			"Name": "heart"
+		},
+		{
+			"Id": "PARAM_HAIR_FRONT",
+			"GroupId": "",
+			"Name": "髪揺れ　前"
+		},
+		{
+			"Id": "PARAM_HAIR_SIDE",
+			"GroupId": "",
+			"Name": "髪揺れ　横"
+		},
+		{
+			"Id": "PARAM_HAIR_BACK",
+			"GroupId": "",
+			"Name": "髪揺れ　後ろ"
+		},
+		{
+			"Id": "Paramliuhai1",
+			"GroupId": "",
+			"Name": "liuhai1"
+		},
+		{
+			"Id": "Paramliuhai2",
+			"GroupId": "",
+			"Name": "liuhai2"
+		},
+		{
+			"Id": "ParamcefaL1",
+			"GroupId": "",
+			"Name": "cefaL1"
+		},
+		{
+			"Id": "ParamcefaL2",
+			"GroupId": "",
+			"Name": "cefaL2"
+		},
+		{
+			"Id": "ParamcefaR1",
+			"GroupId": "",
+			"Name": "cefaR1"
+		},
+		{
+			"Id": "ParamcefaR2",
+			"GroupId": "",
+			"Name": "cefaR2"
+		},
+		{
+			"Id": "ParambianL1",
+			"GroupId": "",
+			"Name": "bianL1"
+		},
+		{
+			"Id": "ParambianL2",
+			"GroupId": "",
+			"Name": "bianL2"
+		},
+		{
+			"Id": "ParambianR1",
+			"GroupId": "",
+			"Name": "bianR1"
+		},
+		{
+			"Id": "ParambianR2",
+			"GroupId": "",
+			"Name": "bianR2"
+		},
+		{
+			"Id": "ParamhdjA",
+			"GroupId": "",
+			"Name": "hdjA"
+		},
+		{
+			"Id": "ParamhdjB",
+			"GroupId": "",
+			"Name": "hdjB"
+		},
+		{
+			"Id": "ParamhdjL1",
+			"GroupId": "",
+			"Name": "hdjL1"
+		},
+		{
+			"Id": "ParamhdjL2",
+			"GroupId": "",
+			"Name": "hdjL2"
+		},
+		{
+			"Id": "ParamhdjR1",
+			"GroupId": "",
+			"Name": "hdjR1"
+		},
+		{
+			"Id": "ParamhdjR2",
+			"GroupId": "",
+			"Name": "hdjR2"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "PARTS_01_BODY",
+			"Name": "体"
+		},
+		{
+			"Id": "PARTS_01_NECK",
+			"Name": "首"
+		},
+		{
+			"Id": "PARTS_01_HAIR_BACK_001",
+			"Name": "後ろ髪"
+		},
+		{
+			"Id": "PARTS_01_HAIR_SIDE_001",
+			"Name": "横髪"
+		},
+		{
+			"Id": "PARTS_01_HAIR_FRONT_001",
+			"Name": "前髪"
+		},
+		{
+			"Id": "PARTS_01_EAR_001",
+			"Name": "耳"
+		},
+		{
+			"Id": "PARTS_01_NOSE_001",
+			"Name": "鼻"
+		},
+		{
+			"Id": "PARTS_01_MOUTH_001",
+			"Name": "口"
+		},
+		{
+			"Id": "PARTS_01_BROW_001",
+			"Name": "まゆ毛"
+		},
+		{
+			"Id": "PARTS_01_EYE_BALL_001",
+			"Name": "目玉"
+		},
+		{
+			"Id": "PARTS_01_EYE_001",
+			"Name": "目"
+		},
+		{
+			"Id": "PARTS_01_FACE_001",
+			"Name": "顔"
+		},
+		{
+			"Id": "PartBQ",
+			"Name": "bq"
+		},
+		{
+			"Id": "PARTS_01_FROZEN",
+			"Name": "leg"
+		}
+	]
+}

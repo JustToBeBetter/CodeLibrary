@@ -25,7 +25,7 @@
 //    [self testUI];
 //    [self showGrayViewInSuperView:self.view];
 //    [self filterTest];
-//    [self testImgViewGray];
+    [self testImgViewGray];
 }
 - (void)testImgViewGray{
     NSArray *webpArray =   @[@"https://jqsj-oss-online.oss-cn-hangzhou.aliyuncs.com/md2/dressIMG/2022-09-29/1664433922363.webp",
