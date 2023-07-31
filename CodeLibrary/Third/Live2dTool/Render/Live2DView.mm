@@ -322,7 +322,7 @@ using namespace LAppDefine;
                     Live2dParamModel *paramModel = [Live2dParamModel new];
                     paramModel.fl = YES;
                     paramModel.ls =  [NSString stringWithFormat:@"%.2f",self.lipValue];
-                    NSString *mf_mYStr = [self.visemesDic jsonString:[NSString stringWithFormat:@"%d",self.visemesIndex]];
+                    NSString *mf_mYStr = self.visemesValue;//[self.visemesDic jsonString:[NSString stringWithFormat:@"%d",self.visemesIndex]];
                     paramModel.mf = [[mf_mYStr componentsSeparatedByString:@"_"]objectAtIndexCheck:0];
                     paramModel.mY = [[mf_mYStr componentsSeparatedByString:@"_"]objectAtIndexCheck:1];
                     [self.msgArray addObject:paramModel.mj_keyValues];
@@ -362,7 +362,7 @@ using namespace LAppDefine;
                     Live2dParamModel *paramModel = [Live2dParamModel new];
                     paramModel.fl = YES;
                     paramModel.ls =  [NSString stringWithFormat:@"%.2f",self.lipValue];
-                    NSString *mf_mYStr = [self.visemesDic jsonString:[NSString stringWithFormat:@"%d",self.visemesIndex]];
+                    NSString *mf_mYStr = self.visemesValue;//[self.visemesDic jsonString:[NSString stringWithFormat:@"%d",self.visemesIndex]];
                     paramModel.mf = [[mf_mYStr componentsSeparatedByString:@"_"]objectAtIndexCheck:0];
                     paramModel.mY = [[mf_mYStr componentsSeparatedByString:@"_"]objectAtIndexCheck:1];
                     [self.msgArray addObject:paramModel.mj_keyValues];
@@ -460,7 +460,7 @@ using namespace LAppDefine;
                 Live2dParamModel *paramModel = [Live2dParamModel new];
                 paramModel.fl = YES;
                 paramModel.ls =  [NSString stringWithFormat:@"%.2f",self.lipValue];
-                NSString *mf_mYStr = [self.visemesDic jsonString:[NSString stringWithFormat:@"%d",self.visemesIndex]];
+                NSString *mf_mYStr = self.visemesValue;//[self.visemesDic jsonString:[NSString stringWithFormat:@"%d",self.visemesIndex]];
                 paramModel.mf = [[mf_mYStr componentsSeparatedByString:@"_"]objectAtIndexCheck:0];
                 paramModel.mY = [[mf_mYStr componentsSeparatedByString:@"_"]objectAtIndexCheck:1];
                 [self.msgArray addObject:paramModel.mj_keyValues];
@@ -827,7 +827,7 @@ using namespace LAppDefine;
 }
 
 - (void)refreshMouthParam{
-    NSString *mf_mYStr = [self.visemesDic jsonString:[NSString stringWithFormat:@"%d",self.visemesIndex]];
+    NSString *mf_mYStr = self.visemesValue;//[self.visemesDic jsonString:[NSString stringWithFormat:@"%d",self.visemesIndex]];
     NSString *mf = [[mf_mYStr componentsSeparatedByString:@"_"]objectAtIndexCheck:0];
     NSString *mY = [[mf_mYStr componentsSeparatedByString:@"_"]objectAtIndexCheck:1];
     [self.live2DModel setParam:@"ParamMouthOpenY" value:mY.floatValue];
@@ -1236,7 +1236,6 @@ using namespace LAppDefine;
     };
 }
 - (NSDictionary *)lipDic{
-    /**15个口型 对应的口型参数 sil,PP,FF,TH,DD,kk,CH,SS,nn,RR,aa,E,ih,oh,ou, 严格按照顺序取值 index为key value为参数字符串 mf_mY*/
     return @{@"B":@"0_0",
              @"F":@"-0.2_0.1",
              @"D":@"-0.9_0.2",

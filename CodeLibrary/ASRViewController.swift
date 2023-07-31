@@ -21,6 +21,7 @@ extension AVAudioPCMBuffer {
     }
 }
 
+
 @objcMembers public class ASRViewController: FaceDetectionViewController {
     
     let resultLabel: UILabel = {
@@ -74,7 +75,7 @@ extension AVAudioPCMBuffer {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupViews()
-        resultLabel.text = "ASR with Next-gen Kaldi\n\nSee https://github.com/k2-fsa/sherpa-ncnn\n\nPress the Start button to run!"
+//        resultLabel.text = "ASR with Next-gen Kaldi\n\nSee https://github.com/k2-fsa/sherpa-ncnn\n\nPress the Start button to run!"
 
         recordBtn.setTitle("Start", for: .normal)
         initRecognizer()
@@ -91,7 +92,8 @@ extension AVAudioPCMBuffer {
     
     private func addL2dView(){
         self.view.addSubview(self.live2dView!)
-        self.view.bringSubviewToFront(self.live2dView!)
+//        self.view.bringSubviewToFront(self.live2dView!)
+        self.view.insertSubview(self.live2dView!, belowSubview: resultLabel);
         self.live2dView!.snp.makeConstraints { make in
             make.edges.equalTo(self.view)
         }
@@ -224,7 +226,9 @@ extension AVAudioPCMBuffer {
                 let text = self.recognizer.getResult().text
                 if text.count != 0{
                     for word in text {
-                        print("word===\(word)\(LJZTool.getLipType(with: "\(word)"))")
+                        let singleWord:String = LJZTool.getLipType(with:"\(word)")!
+                        print("word===\(word)\(singleWord)")
+                        self.updateLive2d(word: singleWord)
                     }
                 }
                 if !text.isEmpty && self.lastSentence != text {
@@ -245,7 +249,10 @@ extension AVAudioPCMBuffer {
         }
 
     }
-
+    func updateLive2d(
+        word:String){
+        self.live2dView?.visemesValue =  word
+    }
     func startRecorder() {
         lastSentence = ""
         sentences = []

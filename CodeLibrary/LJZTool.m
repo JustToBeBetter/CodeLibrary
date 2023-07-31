@@ -456,19 +456,40 @@ static NSMutableArray  *_downLoadArray;
 + (NSString *)getLipTypeWithString:(NSString *)word{
     NSString *pinyin = [NSString pinyinFromChineseString:word];
     NSLog(@"word==1=%@=%@=%@",word,pinyin,word.pinYin);
+
+    return [NSString stringWithFormat:@"%@_%@",[self getPrefixWithPinyin:pinyin],[self getSubffixWithPinyin:pinyin]];
+}
++ (NSString *)getPrefixWithPinyin:(NSString*)pinyin{
+    /**15个口型 对应的口型参数 sil,PP,FF,TH,DD,kk,CH,SS,nn,RR,aa,E,ih,oh,ou, 严格按照顺序取值 index为key value为参数字符串 mf_mY*/
+    NSDictionary *dic = @{@"0":@"0_0",
+             @"1":@"-0.9_0",
+             @"2":@"-0.9_0.2",
+             @"3":@"-0.9_0.5",
+             @"4":@"-0.2_0.6",
+             @"5":@"0.3_0.5",
+             @"6":@"-0.7_0.6",
+             @"7":@"0.3_0.2",
+             @"8":@"-0.9_0.5",
+             @"9":@"-0.8_0.3",
+             @"10":@"0.2_0.5",
+             @"11":@"0.7_0.3",
+             @"12":@"0.8_0.3",
+             @"13":@"-0.8_0.8",
+             @"14":@"-0.8_0.5",
+    };
     //B口型 发音时双唇由闭合到打开，嘴型向外撅
     if ([pinyin hasPrefix:@"b"] ||
         [pinyin hasPrefix:@"m"] ||
         [pinyin hasPrefix:@"p"]) {
-        return @"B";
+        return @"-0.9";//@"B";//-0.9
     }
     //F口型 发音时双唇由闭合到打开，咬唇
     if ([pinyin hasPrefix:@"f"]) {
-        return @"F";
+        return @"-0.9";//@"F";//-0.9
     }
-    
     //D口型 发音时嘴唇微微张开
-    if ([pinyin hasPrefix:@"d"] ||
+    if ([pinyin hasPrefix:@"c"] ||
+        [pinyin hasPrefix:@"d"] ||
         [pinyin hasPrefix:@"t"] ||
         [pinyin hasPrefix:@"n"] ||
         [pinyin hasPrefix:@"l"] ||
@@ -484,9 +505,19 @@ static NSMutableArray  *_downLoadArray;
         [pinyin hasPrefix:@"r"] ||
         [pinyin hasPrefix:@"z"] ||
         [pinyin hasPrefix:@"s"]) {
-        return @"D";
+        return @"0.7";//@"D";//0.7
     }
-    
+    //U口型 发音时嘴唇张开幅度较小，嘴型非圆形向前撅
+    if ([pinyin hasPrefix:@"w"]) {
+        return @"0.3";//@"U";//0.3
+    }
+    //E口型 发音时嘴唇张开幅度较小，嘴型非圆形并向两侧伸展
+    if ([pinyin hasPrefix:@"y"]) {
+        return @"0.2";//@"E";//0.2
+    }
+    return @"0";
+}
++ (NSString *)getSubffixWithPinyin:(NSString*)pinyin{
     //A口型 发音时嘴唇张开幅度较大，嘴型呈非圆形
     if ([pinyin containsString:@"a"] ||
         [pinyin containsString:@"ai"] ||
@@ -500,7 +531,7 @@ static NSMutableArray  *_downLoadArray;
         [pinyin containsString:@"uai"] ||
         [pinyin containsString:@"uan"] ||
         [pinyin containsString:@"uang"]) {
-        return @"A";
+        return @"0.5";//@"A";//0.5
     }
     //O口型 发音时嘴唇张开幅度较大，嘴型呈圆形
     if ([pinyin containsString:@"o"] ||
@@ -508,7 +539,7 @@ static NSMutableArray  *_downLoadArray;
         [pinyin containsString:@"ong"] ||
         [pinyin containsString:@"uo"] ||
         [pinyin containsString:@"iong"]) {
-        return @"O";
+        return @"0.8";//@"O";//0.8
     }
     
     //E口型 发音时嘴唇张开幅度较小，嘴型非圆形并向两侧伸展
@@ -525,7 +556,7 @@ static NSMutableArray  *_downLoadArray;
         [pinyin containsString:@"ing"] ||
         [pinyin containsString:@"ueng"] ||
         [pinyin containsString:@"y"]) {
-        return @"E";
+        return @"0.2";//@"E";//0.2
     }
     
     //U口型 发音时嘴唇张开幅度较小，嘴型非圆形向前撅
@@ -533,10 +564,9 @@ static NSMutableArray  *_downLoadArray;
         [pinyin containsString:@"ve"] ||
         [pinyin containsString:@"iou"] ||
         [pinyin containsString:@"un"] ||
-        [pinyin containsString:@"ui"] ||
-        [pinyin containsString:@"w"]) {
-        return @"U";
+        [pinyin containsString:@"ui"] ) {
+        return @"0.2";//@"U";//0.2
     }
-    return @"";
+    return @"0";
 }
 @end

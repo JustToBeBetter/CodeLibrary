@@ -58,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 /**口型索引*/
 @property (nonatomic, assign) int visemesIndex;
 
+@property (nonatomic, copy) NSString *visemesValue;
+
 - (void)setCurrentContext;
 
 - (void)setFaceDetectionData:(YKFaceInfo *)faceDetectionReport;
