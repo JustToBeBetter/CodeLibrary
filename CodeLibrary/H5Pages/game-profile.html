@@ -326,7 +326,7 @@
             <div class="section-title">
                 <span class="section-title-text">巅峰赛战绩</span>
             </div>
-            <div class="stats-card">
+            <div class="stats-card" id="peak-stats-card">
                 <div class="rank-badge">
                     <div class="rank-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -374,7 +374,7 @@
             <div class="section-title">
                 <span class="section-title-text">竞技赛</span>
             </div>
-            <div class="stats-card">
+            <div class="stats-card" id="competitive-stats-card">
                 <div class="rank-badge">
                     <div class="rank-icon">
                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -432,48 +432,32 @@
             if (window.history.length > 1) {
                 window.history.back();
             } else {
-                // Fallback action if no history
-                alert('返回');
+                // Fallback: navigate to home or close window
+                window.location.href = '/';
             }
         });
-
-        // Example: Dynamic data loading
-        // You can replace these with actual API calls
-        const profileData = {
-            userName: '我是用户昵称',
-            peakStats: {
-                rank: 'XXXX',
-                totalGames: 0,
-                winRate: '0'
-            },
-            competitiveStats: {
-                rank: 'XXXX',
-                totalGames: 9999,
-                winRate: '66%'
-            }
-        };
 
         // Function to update UI with data
         function updateProfile(data) {
             document.querySelector('.user-name').textContent = data.userName;
             
             // Update peak stats
-            const peakCard = document.querySelectorAll('.stats-card')[0];
+            const peakCard = document.getElementById('peak-stats-card');
             peakCard.querySelector('.rank-label').textContent = data.peakStats.rank;
             const peakStatValues = peakCard.querySelectorAll('.stat-value');
             peakStatValues[0].textContent = data.peakStats.totalGames;
             peakStatValues[1].textContent = data.peakStats.winRate;
             
             // Update competitive stats
-            const compCard = document.querySelectorAll('.stats-card')[1];
+            const compCard = document.getElementById('competitive-stats-card');
             compCard.querySelector('.rank-label').textContent = data.competitiveStats.rank;
             const compStatValues = compCard.querySelectorAll('.stat-value');
             compStatValues[0].textContent = data.competitiveStats.totalGames;
             compStatValues[1].textContent = data.competitiveStats.winRate;
         }
 
-        // Initialize with profile data
-        // updateProfile(profileData);
+        // Example usage: Load profile data from API
+        // fetch('/api/profile').then(res => res.json()).then(updateProfile);
     </script>
 </body>
 </html>
