@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>游戏生涯</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(180deg, #1a3a5c 0%, #0d2840 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 16px;
+            background: #fff;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: 16px;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .header-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* Banner Section */
+        .banner-section {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            background: linear-gradient(180deg, #f5a0b4 0%, #87ceeb 30%, #4a7c9b 70%, #2d5a7b 100%);
+            overflow: hidden;
+        }
+
+        .banner-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Cherry blossom tree illustration using CSS */
+        .cherry-tree {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse 80% 60% at 30% 40%, rgba(255, 182, 193, 0.8) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 50% at 50% 35%, rgba(255, 192, 203, 0.7) 0%, transparent 45%),
+                radial-gradient(ellipse 50% 40% at 70% 50%, rgba(255, 182, 193, 0.6) 0%, transparent 40%),
+                linear-gradient(180deg, #ffb6c1 0%, #87ceeb 25%, #5d8aa8 50%, #3d6a8c 75%, #2d5a7b 100%);
+        }
+
+        .game-logo {
+            position: absolute;
+            top: 40px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            writing-mode: horizontal-tb;
+        }
+
+        .game-logo-text {
+            font-family: 'KaiTi', 'STKaiti', serif;
+            font-size: 28px;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .game-logo-sub {
+            font-size: 14px;
+            color: #e0e0e0;
+            margin-top: 4px;
+        }
+
+        /* User Profile */
+        .user-profile {
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 30px;
+            padding: 8px 20px 8px 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin-right: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .user-avatar svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .user-name {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 0 16px;
+            margin-top: -10px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin: 24px 0 16px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(180deg, #ffd700 0%, #ff8c00 100%);
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+
+        .section-title-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* Stats Card */
+        .stats-card {
+            background: linear-gradient(135deg, rgba(45, 90, 123, 0.8) 0%, rgba(30, 60, 90, 0.9) 100%);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .rank-badge {
+            width: 120px;
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .rank-icon {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rank-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .rank-label {
+            background: linear-gradient(90deg, #c9a227 0%, #f4d03f 50%, #c9a227 100%);
+            color: #333;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 4px;
+            margin-top: 8px;
+            text-align: center;
+            min-width: 80px;
+        }
+
+        .stats-info {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        .stat-value.highlight {
+            color: #4dd0e1;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 8px;
+        }
+
+        /* Peak Competition Badge - Purple Dragon */
+        .peak-badge {
+            background: linear-gradient(135deg, #6a0dad 0%, #9b30ff 50%, #6a0dad 100%);
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(155, 48, 255, 0.5);
+        }
+
+        /* Competitive Badge - Gold Sword */
+        .competitive-badge {
+            background: linear-gradient(135deg, #b8860b 0%, #ffd700 50%, #b8860b 100%);
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Bottom spacing */
+        .bottom-spacer {
+            height: 40px;
+        }
+
+        /* Home indicator */
+        .home-indicator {
+            width: 134px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 100px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <span class="back-btn">&lt;</span>
+            <span class="header-title">游戏生涯</span>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="banner-section">
+            <div class="cherry-tree"></div>
+            
+            <!-- Game Logo -->
+            <div class="game-logo">
+                <div class="game-logo-sub">三国杀</div>
+                <div class="game-logo-text">武将觉醒</div>
+            </div>
+
+            <!-- User Profile -->
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ffe4c4"/>
+                                <stop offset="100%" style="stop-color:#deb887"/>
+                            </linearGradient>
+                            <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2c1810"/>
+                                <stop offset="100%" style="stop-color:#1a0f0a"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Hair -->
+                        <ellipse cx="50" cy="35" rx="35" ry="30" fill="url(#hairGrad)"/>
+                        <path d="M20 50 Q15 70 25 85" stroke="#2c1810" stroke-width="8" fill="none"/>
+                        <path d="M80 50 Q85 70 75 85" stroke="#2c1810" stroke-width="8" fill="none"/>
+                        <!-- Face -->
+                        <ellipse cx="50" cy="50" rx="25" ry="28" fill="url(#skinGrad)"/>
+                        <!-- Eyes -->
+                        <ellipse cx="40" cy="48" rx="4" ry="3" fill="#333"/>
+                        <ellipse cx="60" cy="48" rx="4" ry="3" fill="#333"/>
+                        <!-- Lips -->
+                        <path d="M45 60 Q50 65 55 60" stroke="#c44" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <span class="user-name">我是用户昵称</span>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <!-- Peak Competition -->
+            <div class="section-title">
+                <span class="section-title-text">巅峰赛战绩</span>
+            </div>
+            <div class="stats-card">
+                <div class="rank-badge">
+                    <div class="rank-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Dragon Badge Background -->
+                            <defs>
+                                <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#9b30ff"/>
+                                    <stop offset="50%" style="stop-color:#6a0dad"/>
+                                    <stop offset="100%" style="stop-color:#4b0082"/>
+                                </linearGradient>
+                                <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ffd700"/>
+                                    <stop offset="50%" style="stop-color:#daa520"/>
+                                    <stop offset="100%" style="stop-color:#b8860b"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Outer ring -->
+                            <circle cx="50" cy="45" r="38" fill="none" stroke="url(#goldGrad2)" stroke-width="3"/>
+                            <!-- Inner badge -->
+                            <circle cx="50" cy="45" r="32" fill="url(#purpleGrad)"/>
+                            <!-- Dragon silhouette -->
+                            <path d="M35 55 Q40 35 50 30 Q60 35 65 55 Q55 50 50 55 Q45 50 35 55" 
+                                  fill="#fff" opacity="0.8"/>
+                            <circle cx="45" cy="40" r="3" fill="#fff"/>
+                            <circle cx="55" cy="40" r="3" fill="#fff"/>
+                            <!-- Decorative elements -->
+                            <path d="M25 70 L35 60 L50 75 L65 60 L75 70 L50 90 Z" fill="url(#goldGrad2)"/>
+                        </svg>
+                    </div>
+                    <div class="rank-label">XXXX</div>
+                </div>
+                <div class="stats-info">
+                    <div class="stat-item">
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">总场次</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">胜率</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitive Match -->
+            <div class="section-title">
+                <span class="section-title-text">竞技赛</span>
+            </div>
+            <div class="stats-card">
+                <div class="rank-badge">
+                    <div class="rank-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Sword Badge -->
+                            <defs>
+                                <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1e90ff"/>
+                                    <stop offset="50%" style="stop-color:#4169e1"/>
+                                    <stop offset="100%" style="stop-color:#0000cd"/>
+                                </linearGradient>
+                                <linearGradient id="goldGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ffd700"/>
+                                    <stop offset="50%" style="stop-color:#daa520"/>
+                                    <stop offset="100%" style="stop-color:#b8860b"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Outer ring -->
+                            <circle cx="50" cy="45" r="38" fill="none" stroke="url(#goldGrad3)" stroke-width="3"/>
+                            <!-- Inner badge -->
+                            <circle cx="50" cy="45" r="32" fill="url(#blueGrad)"/>
+                            <!-- Crossed swords -->
+                            <path d="M35 25 L50 55 L40 55 L35 25" fill="url(#goldGrad3)"/>
+                            <path d="M65 25 L50 55 L60 55 L65 25" fill="url(#goldGrad3)"/>
+                            <rect x="45" y="55" width="10" height="8" rx="2" fill="url(#goldGrad3)"/>
+                            <!-- Wing decorations -->
+                            <path d="M20 45 Q30 35 40 45 Q30 50 20 45" fill="#fff" opacity="0.6"/>
+                            <path d="M80 45 Q70 35 60 45 Q70 50 80 45" fill="#fff" opacity="0.6"/>
+                            <!-- Bottom ribbon -->
+                            <path d="M25 70 L35 60 L50 75 L65 60 L75 70 L50 90 Z" fill="url(#goldGrad3)"/>
+                        </svg>
+                    </div>
+                    <div class="rank-label">XXXX</div>
+                </div>
+                <div class="stats-info">
+                    <div class="stat-item">
+                        <div class="stat-value highlight">9999</div>
+                        <div class="stat-label">总场次</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value highlight">66%</div>
+                        <div class="stat-label">胜率</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom spacing -->
+        <div class="bottom-spacer"></div>
+        <div class="home-indicator"></div>
+    </div>
+
+    <script>
+        // Back button functionality
+        document.querySelector('.back-btn').addEventListener('click', function() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // Fallback action if no history
+                alert('返回');
+            }
+        });
+
+        // Example: Dynamic data loading
+        // You can replace these with actual API calls
+        const profileData = {
+            userName: '我是用户昵称',
+            peakStats: {
+                rank: 'XXXX',
+                totalGames: 0,
+                winRate: '0'
+            },
+            competitiveStats: {
+                rank: 'XXXX',
+                totalGames: 9999,
+                winRate: '66%'
+            }
+        };
+
+        // Function to update UI with data
+        function updateProfile(data) {
+            document.querySelector('.user-name').textContent = data.userName;
+            
+            // Update peak stats
+            const peakCard = document.querySelectorAll('.stats-card')[0];
+            peakCard.querySelector('.rank-label').textContent = data.peakStats.rank;
+            const peakStatValues = peakCard.querySelectorAll('.stat-value');
+            peakStatValues[0].textContent = data.peakStats.totalGames;
+            peakStatValues[1].textContent = data.peakStats.winRate;
+            
+            // Update competitive stats
+            const compCard = document.querySelectorAll('.stats-card')[1];
+            compCard.querySelector('.rank-label').textContent = data.competitiveStats.rank;
+            const compStatValues = compCard.querySelectorAll('.stat-value');
+            compStatValues[0].textContent = data.competitiveStats.totalGames;
+            compStatValues[1].textContent = data.competitiveStats.winRate;
+        }
+
+        // Initialize with profile data
+        // updateProfile(profileData);
+    </script>
+</body>
+</html>
