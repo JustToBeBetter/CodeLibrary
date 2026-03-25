@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03E9066796B960EB0D4DEADC /* GameCareerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9E1D7D7B0B9F0565F13A3 /* GameCareerViewController.m */; };
 		5922922C2A49A00100F92A1D /* libLive2DCubismCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 592291BE2A49A00100F92A1D /* libLive2DCubismCore.a */; };
 		5922922D2A49A00100F92A1D /* CubismFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 592291C22A49A00100F92A1D /* CubismFramework.cpp */; };
 		5922922E2A49A00100F92A1D /* CubismModelSettingJson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 592291C42A49A00100F92A1D /* CubismModelSettingJson.cpp */; };
@@ -281,6 +282,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04D9E1D7D7B0B9F0565F13A3 /* GameCareerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GameCareerViewController.m; sourceTree = "<group>"; };
 		37E7A80F8F9C0BDAD8A78FFC /* libPods-CodeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		592291BD2A49A00100F92A1D /* Live2DCubismCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live2DCubismCore.h; sourceTree = "<group>"; };
 		592291BE2A49A00100F92A1D /* libLive2DCubismCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLive2DCubismCore.a; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 		A2337B1020883E660033090F /* SegmentViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewViewController.m; sourceTree = "<group>"; };
 		A2337B1320883EE80033090F /* LJZSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJZSegmentView.h; sourceTree = "<group>"; };
 		A2337B1420883EE80033090F /* LJZSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJZSegmentView.m; sourceTree = "<group>"; };
+		A56BA8CED4AEC7BFB388C522 /* GameCareerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GameCareerViewController.h; sourceTree = "<group>"; };
 		A7A1567C5FB196E2E349C7A9 /* Pods-CodeLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeLibrary/Pods-CodeLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		A905AAB71F414C7500325F01 /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
 		A905AAB81F414C7500325F01 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
@@ -1397,6 +1400,8 @@
 				A9B0D9D41E9DFFD50024361F /* Utility */,
 				A9B0D9D31E9DFF1E0024361F /* AppDelegate */,
 				A9B0D99D1E9DF9970024361F /* Supporting Files */,
+				A56BA8CED4AEC7BFB388C522 /* GameCareerViewController.h */,
+				04D9E1D7D7B0B9F0565F13A3 /* GameCareerViewController.m */,
 			);
 			path = CodeLibrary;
 			sourceTree = "<group>";
@@ -2253,6 +2258,7 @@
 				592292882A4A771000F92A1D /* FaceDetectionViewController.m in Sources */,
 				A905AB781F4E967300325F01 /* LJZSecondViewController.m in Sources */,
 				AF282F032240ED18006B3B76 /* LJZRecordManager.m in Sources */,
+				03E9066796B960EB0D4DEADC /* GameCareerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

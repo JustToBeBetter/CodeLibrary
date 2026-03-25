@@ -39,7 +39,7 @@
     [self loadL2dData];
 }
 - (void)initData{
-    _dataArray = @[@"ASR",@"UIDynamicAnimator",@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer",@"BlurEffect",@"GifWebPImg",@"Log",@"AudioConvert",@"AppGray",@"UploadToPhone"];
+    _dataArray = @[@"ASR",@"UIDynamicAnimator",@"Barrage",@"FireLike",@"CountDown",@"Pages",@"GifMaker",@"FloatingView",@"Paoma",@"SegmentView",@"NetworkSpeed",@"Shake",@"PhotoMaker",@"StickyHeader",@"LJZRecord",@"LJZPlayer",@"BlurEffect",@"GifWebPImg",@"Log",@"AudioConvert",@"AppGray",@"UploadToPhone",@"GameCareer"];
 }
 - (void)loadL2dData{
     NSArray *dataArray = @[@"https://jqsj-oss-online.oss-cn-hangzhou.aliyuncs.com/md2/live2d/fayi04.zip",
